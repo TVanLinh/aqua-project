@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row aqua-product-container">
+        <div class="col-md-4 col-sm-6  col-xs-12" ng-repeat="x in listData">
+            <div class="aqua-product text-center">
+                <div class="__image ">
+                    <img src="{{x.img}}" alt="sp1" class="img-responsive">
+                </div>
+                <div class="__overlay-wraper">
+                    <div class="__over-content cell-vertical-wrapper">
+                        <div class="cell-vertical-middle">
+                            <div class="__name">
+                                <div class="aqua-heading">
+                                    <a href="#!product"></a>  <div class="__aqua-heading-title">
+                                        {{x.name}}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="__price">
+                                <h1>{{x.price}}</h1>
+                            </div>
+                           <a href="#!product"> <div class="__add-cart button-border  bgc-light hover-bgc-main1 hover-border-c-main1 hover-color-light">
+                                ADD TO CART
+                            </div></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,10 @@
+@mixin button($background,$color)
+{
+     color:$color;
+     background:$background;
+     border-color: $color;
+}
+@mixin easing-animation($time:0.4)
+{
+     transition:all #{$time}s ease-in-out;
+}

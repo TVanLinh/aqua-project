@@ -1,0 +1,126 @@
+.aqua-sevice7,.aqua-sevice8
+{
+  position: relative;
+  margin-bottom:65px;
+  .__image
+  {
+    max-width:600px;
+    height:650px;
+    background-size:cover;
+    background-repeat:no-repeat;
+  }
+  .__content
+  {
+    margin-top:50px;
+    position: absolute;
+    top:0;
+    right:0;
+    .title
+    {
+      letter-spacing:2;
+      margin-bottom:60px;
+    }
+    .list-product
+    {
+      background-color: rgba(231, 230, 225, 0.7);
+      padding:40px 30px;
+
+    }
+  }
+  .list-underline{
+    list-style:none;
+    padding:0;
+    margin: 0;
+    >li{
+      margin: 0;
+      padding: 0;
+      display: table;
+      padding:5px;
+      >*{
+        display: table-cell;
+        vertical-align:bottom;
+      }
+      .name{
+        width:100%;
+        position: relative;
+        overflow: hidden;
+        font-family:$ff-main2;
+        font-size:16px;
+        font-weight:700;
+        &:after{
+          content:"";
+          display: inline-block;
+          position: absolute;
+          border-bottom:1px solid #fff;
+          bottom:0.4em;
+          width:100%;
+          margin-left:15px;
+        }
+      }
+      .price
+      {
+        padding-left:15px;
+        font-family: "Josefin Sans", sans-serif;;
+      }
+    }
+  }
+}
+.aqua-sevice8
+{
+  position: relative;
+  .__image
+  {
+    max-width:600px;
+    height:650px;
+    margin-left:auto;
+  }
+  .__content
+  {
+    position: absolute;
+    left:0;
+    right:auto;
+    .list-product
+    {
+      background-color: rgba(198, 217, 198, 0.7);
+    }
+  }
+
+}
+@media (max-width:992px)
+{
+  .aqua-sevice7,.aqua-sevice8
+  {
+    .__image
+    {
+      margin-left:auto;
+      margin-right:auto;
+      height:650px;
+    }
+  }
+
+
+}
+@media (max-width:462px) {
+
+  .aqua-sevice7,.aqua-sevice8
+  {
+    .list-underline>li .name:after
+    {
+      display: none;
+    }
+  }
+}
+@media (max-width:400px) {
+
+  .aqua-sevice7,.aqua-sevice8
+  {
+    .__image
+    {
+      height:900px;;
+    }
+    .list-underline>li .name:after
+    {
+
+    }
+  }
+}

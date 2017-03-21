@@ -1,0 +1,83 @@
+.row-main-footer {
+  margin-top: 60px; }
+  .row-main-footer .ro-footer-item {
+    font-size: 16px;
+    color: #444444; }
+    .row-main-footer .ro-footer-item p {
+      margin-top: 25px;
+      margin-bottom: 35px;
+      font-weight: bold; }
+    .row-main-footer .ro-footer-item .ro-social {
+      margin-top: 20px; }
+      .row-main-footer .ro-footer-item .ro-social .ro-social-item {
+        color: #666666;
+        transition: all 0.3s ease-in-out; }
+        .row-main-footer .ro-footer-item .ro-social .ro-social-item:hover {
+          color: #84C340; }
+  .row-main-footer .ro-footer-separator {
+    margin-left: auto;
+    margin-right: auto;
+    width: 0px;
+    height: 220px;
+    border-left: 1px solid #444444; }
+
+@meida (min-width: 1199) {
+  .row-main-footer .ro-footer-separator {
+    display: none; } }
+  .row-main-footer .ro-open-time p {
+    line-height: 2; }
+  @media (max-width: 1199px) {
+    .row-main-footer {
+      text-align: center; } }
+  .row-main-footer .ro-btn-bd-1 {
+    padding: 10px;
+    border: 1px solid #444444;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #444444; }
+    .row-main-footer .ro-btn-bd-1:hover {
+      background-color: #84C340;
+      border-color: #84C340;
+      color: #FFFFFF; }
+  .row-main-footer .footer-item-outdress p {
+    margin-bottom: 54px; }
+  @media (max-width: 1024px) {
+    .row-main-footer h1 {
+      margin-top: 40px;
+      margin-bottom: 20px; } }
+  .row-main-footer .input-wraper {
+    margin-top: 25px; }
+    .row-main-footer .input-wraper .icon-basic-mail-open-text {
+      background: #444444; }
+      .row-main-footer .input-wraper .icon-basic-mail-open-text:before {
+        content: "\e1fd";
+        color: #ffffff; }
+      .row-main-footer .input-wraper .icon-basic-mail-open-text:hover {
+        background: #84C340; }
+    .row-main-footer .input-wraper input {
+      color: #000;
+      padding: 20px;
+      out-line: none; }
+      .row-main-footer .input-wraper input:focus {
+        border-color: #84C340;
+        out-line: none; }
+  .row-main-footer .footer-item {
+    margin-top: 30px; }
+  .row-main-footer .footer-item-end {
+    padding-top: 15px;
+    padding-bottom: 35px;
+    font-size: 18px;
+    font-family: serif; }
+  .row-main-footer .row-top {
+    position: fixed !important;
+    z-index: 9999;
+    right: 20px;
+    bottom: 25px;
+    display: none;
+    border: 1px solid #444444;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: all 0.3s ease-in-out; }
+    .row-main-footer .row-top:hover {
+      background: #84C340;
+      border-color: #84C340; }

@@ -1,0 +1,20 @@
+[
+  {
+      "img":["assets/images/team21.jpg","assets/images/team31.png"],
+      "name":"CARON MINICE",
+      "job":"Massage man",
+      "description":"I have been licensed for 14 years.<br class='hidden-'>I have worked at Aqua Spa for 14 years.<br class='hidden-'>Pedicure, Manicure, Shellac, Acrylic Nail, Waxing"
+  },
+  {
+    "img":["assets/images/team22.jpg","assets/images/team32.png"],
+    "name":"MICHEL CARTER",
+    "job":"Nail staff",
+    "description":"I have been licensed for 12 years.<br class='hidden-d'>Nice, clean, friendly, relaxing environment. Good rate,<br class='hi'>flexible hours"
+  },
+  {
+    "img":["assets/images/team23.jpg","assets/images/team33.png"],
+    "name":"TARA STITLER",
+    "job":"Yoga teacher",
+    "description":"Certified in Hatha Yoga, Tara offers a fusion of different <br class='hidden-md'> styles she has learned over the years, and blends <br class='hidden-'>tradition  with the physiology of the body."
+  }
+]

@@ -1,0 +1,131 @@
+<div class="container">
+    <div class="row aqua-shop-tab-container" >
+        <div class="col-md-3 col-sm-6 col-xs-12 shop-tab center-block" ng-repeat="x in listData" ng-if="$index<=3">
+            <div class="aqua-overlay-container margin-bottom-5 ">
+
+                <!------------------n==2---------------->
+                    <div class="__image " ng-if="$index==2">
+                        <a href="#!product"> <img src="{{x.img}}" alt=""></a>
+                        <div class="__shop-sale-off bgca-light ">
+                            -20%
+                        </div>
+                    </div>
+                <!------------------n!=2---------------->
+                    <div class="__image " ng-if="$index!=2">
+                        <a href="#!product"> <img src="{{x.img}}" alt=""></a>
+                    </div>
+                <!------------------------------------>
+                <div class="__overlay-wraper pd-20">
+                                <div class="__overlay-content text-center bgca-light ro-inner-sepertor">
+                                    <div class="cell-vertical-wrapper ro-overlay-inner">
+                                        <div class="cell-vertical-middle">
+                                            <a href="#!product" class="__cart-btn" >
+                                                <i class="icon-ecommerce-cart" ></i>
+                                            </a>
+                                            <span class="_shop-seperator"></span>
+                                            <a href="#!product"   class="__like-btn">
+                                                <i class="icon-basic-heart" class="__icon-shop"></i>
+                                            </a>
+                                      </div>
+                                </div>
+                            </div>
+                      </div>
+                </div>
+
+            <div class="__title upper-case text-center margin-bottom-2">
+                <a href="#!product">{{x.title}}</a>
+            </div>
+
+            <div class="__price text-center margin-bottom-2" ng-if="$index==2">
+                <span class="__price-discount">$64</span><span class="__price-discount"></span>{{x.price}}
+            </div>
+
+            <div class="__price text-center margin-bottom-2" ng-if="$index!=2">
+                <span class="__price-discount"></span>{{x.price}}
+            </div>
+
+            <div class="__data-rating text-center" data-rating="4">
+                <span class="__ro-rated">&#9733;</span>
+                <span class="__ro-rated">&#9733;</span>
+                <span class="__ro-rated">&#9733;</span>
+                <span class="__ro-rated">&#9733;</span>
+                <span class="__ro-rating">&#9733;</span>
+            </div>
+        </div>
+        <!--------gach nang---------------------------------------------------------------------->
+        <div class="col-lg-12 visible-lg">
+            <div class="custom_hr pd-10"></div>
+        </div>
+
+        <!--------phan 2-->
+
+        <div class="col-md-3 col-sm-6 col-xs-12 shop-tab center-block" ng-repeat="y in listData" ng-if="$index>=4">
+            <div class="aqua-overlay-container margin-bottom-5 ">
+              <!--------------------------------->
+                <div class="__image ">
+                    <a href="#!product"> <img src="{{y.img}}" alt=""></a>
+                </div>
+                <!------------------------------------>
+                <div class="__overlay-wraper pd-20">
+                    <div class="__overlay-content text-center bgca-light ro-inner-sepertor">
+                        <div class="cell-vertical-wrapper ro-overlay-inner">
+                            <div class="cell-vertical-middle">
+                                <a href="cart.html" class="__cart-btn" >
+                                    <i class="icon-ecommerce-cart" ></i>
+                                </a>
+                                <span class="_shop-seperator"></span>
+                                <a href="#"   class="__like-btn">
+                                    <i class="icon-basic-heart" class="__icon-shop"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="__title upper-case text-center margin-bottom-2">
+                <a href="#">{{y.title}}</a>
+            </div>
+
+            <div class="__price text-center margin-bottom-2" ng-if="$index==2">
+                <span class="__price-discount">$64</span><span class="__price-discount"></span>{{y.price}}
+            </div>
+
+            <div class="__price text-center margin-bottom-2" ng-if="$index!=2">
+                <span class="__price-discount"></span>{{y.price}}
+            </div>
+
+            <div class="__data-rating text-center" data-rating="4">
+                <span class="__ro-rated">&#9733;</span>
+                <span class="__ro-rated">&#9733;</span>
+                <span class="__ro-rated">&#9733;</span>
+                <span class="__ro-rated">&#9733;</span>
+                <span class="__ro-rating">&#9733;</span>
+            </div>
+        </div>
+
+        <!----nextpage--------------------------------------------------------------------->
+        <div class="col-lg-12 col-sm-12 col-xs-12 col-md-12">
+            <div class="aqua-pagination text-center pd-top-6 pd-bottom-6">
+                <div class="__content clearfix">
+                   <a href="#" class="__prev __hover"></a>
+                    <a href="#" class="__number"> 1
+                    </a>
+                    <a href="#" class="__number"> 2
+                    </a>
+                    <a href="#" class="__number"> 3
+                    </a>
+                    <a href="#" class="__number"> 4
+                    </a> <a href="#" class="__number"> 5
+                    </a>
+                    <a href="#" class="__next __hover"></a>
+                </div>
+            </div>
+        </div>
+
+        <!---------------------------------------------------------------------------------->
+    </div>
+
+</div>
+
+

@@ -1,0 +1,72 @@
+[
+  {
+    "img":"assets/images/blog3.jpg",
+    "title":"Are you really happy and relaxed ?",
+    "note":["When you have once seen the glow of happiness on the face of a beloved person. ","Suspendisse consectetur consectetur bibendum.Etiam vel orci ipsum. Sed eget velit ipsum..."],
+    "content":"<p><span class='ro-first-letter'>W</span>ith the official start of summer just weeks away many of us are getting more serious about our fitness goals (goodbye layers… hello bathing suit season!). Get yourself in tip-top shape for everything summer has to offer with these great fitness tips from Sanctuary on Camelback Mountain’s fitness and wellness director, Kara Thomas, and Olympic gold-medal swimmer, Misty Hyman.</p><p>Misty’s Tip: Moderation is Key - “Swimming is a fantastic sport for weight loss. It’s easy on the joints, it uses the whole body, and is great for the lungs and heart. It is a complete workout, but to get the best fitness results an extreme plunge into a rigorous workout routine is not the answer.”</p><p>Misty’s Tip: Balance and Tone the Shoulders - “Any workout that involves the upper body requires shoulder stability. Prevent injury and get the defined shoulders you crave by externally and internally rotating the shoulders with moderate resistance. Use a stretch cord or small dumbbells with the arm bent at a 90 degree angle. Keep the resistance moderate and work up to 2-3 sets of 15 on each side.”</p><p> Misty’s Tip: Lift to Lighten Up- “Weight training helps slim the body (despite the stigma that it bulks us up). To get the ‘swimmers back,’ alternate between 15 repetitions of seated lat pulls and 15 repetitions of seated rows, both with medium weight. Train your way up to three rounds per strength workout.”</p> <p>Kara’s Tip: Condition the Heart - “If you’re new to exercise, strengthen the heart by being consistent with your workout program. Try 20-30 minutes of a sound cardio program five to seven days a week for two weeks. Then, kick the cardio up a notch to 45 minutes for two weeks. After a month, increase to 60 minutes at least five days a week. Before you know it, 60 minutes of cardio seven days per week will be a breeze! Plus, you’ll feel great.”</p><p>Kara’s Tip: Rest - “Muscles need recovery time post-workout. After your favorite boot camp or power strength and resistance class, rest for a day – stretch or do yoga, and then go after that high intensity workout again.” Looking for more fitness tips? Check out our Fitness section for workouts, expert advice, and more!</p>",
+    "time":"March 16, 2015",
+    "author":"admin",
+    "number":"20",
+    "service":
+    [
+        "Full Body Massage (78$)",
+        "Body Polish (-20%)",
+        "Massages Foot (-30%)",
+        "Sea Mud Wrap (68$)",
+        "Hot Stone Massage (73$)",
+        "Delux Seated Massage (78$)"
+    ],
+    "latepost":
+    [
+      {
+        "img":"assets/images/blog14.jpg",
+         "content":"How To Improve And Refine",
+          "time":"July 9, 2014"
+      },
+      {
+        "img":"assets/images/blog13.jpg",
+        "content":"How To Improve And Refine",
+        "time":"July 9, 2014"
+      },
+      {
+        "img":"assets/images/blog12.jpg",
+        "content":"How To Improve And Refine",
+        "time":"July 9, 2014"
+      },
+      {
+        "img":"assets/images/blog11.jpg",
+        "content":"How To Improve And Refine",
+        "time":"July 9, 2014"
+      },
+      {
+        "img":"assets/images/blog10.jpg",
+        "content":"How To Improve And Refine",
+        "time":"July 9, 2014"
+      }
+    ],
+    "custormer":[
+      {
+        "name":"Amanda Smooth",
+        "img":"assets/images/comment.jpg",
+        "comment":"Aqua Spa is a wonderfully relaxing, unpretentious haven in the heart of the city. The staff is friendly, attentive and knowledgeable, offering a complete list of services and expertise. Amrit's facials in particular are a special treat. I've been going to Aqua regularly for five years, and have never wanted to go anywhere else.",
+        "time":"October 4, 2012 at 12:00 pm"
+      },
+      {
+        "name":"Spring Local",
+        "img":"assets/images/comment2.jpg",
+        "comment":"I highly recommend Spa for its excellent service, as well as its courteous, knowledgeable and friendly staff.",
+        "time":"October 4, 2012 at 12:00 pm"
+      }
+    ],
+    "imgportforlio": ["assets/images/blog-related1.jpg",
+      "assets/images/blog-related2.jpg",
+      "assets/images/blog-related3.jpg",
+      "assets/images/blog-related4.jpg"],
+    "addr":
+    {
+        "email":"Business@bluecadet.com<br>AQUAspa.@domain.com",
+        "hotline":"",
+        "add":""
+    }
+  }
+]

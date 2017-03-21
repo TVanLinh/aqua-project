@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row portfolio-container" data-json="portfolio">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" ng-repeat="x in listData">
+           <a href="#" > <div class="aqua-portfolio-item text-center ">
+                <div class="__image ">
+                    <img src="{{x.img}}" alt="{{x.alt}}" class="img-responsive">
+                </div>
+                <div class="__overlay-wraper ">
+                    <div class="__overlay-content cell-vertical-wrapper " ng-if="$odd" style="background-color:rgba(255, 255, 255, 0.7)">
+                       <div class="cell-vertical-middle __text text-center upper-case class="color-gray-4"">
+                            DRESSIng ROOm
+                        </div>
+                    </div>
+                    <div class="__overlay-content cell-vertical-wrapper " ng-if="$even" style="background-color:rgba(198, 217, 198, 0.7);">
+                        <div class="cell-vertical-middle __text text-center upper-case">
+                            DRESSIng ROOm
+                        </div>
+                    </div>
+                </div>
+           </a>
+            </div>
+        </div>
+    </div>
+</div>

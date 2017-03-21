@@ -1,0 +1,24 @@
+<div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-xs-12 " ng-repeat="x in listData">
+             <a href="#">
+                     <div class="service-item-style-2 text-center mgt-xs-5 pdt-xs-5">
+                        <div class="__image">
+                            <img src="{{x.img[0]}}" atl="service 1" class="img-responsive">
+                        </div>
+                        <div class="__content bgc-light">
+                            <div class="__title upper-case ">
+                                <h4>{{x.title}}</h4>
+                            </div>
+                            <div class="__seperator">
+
+                            </div>
+                            <div class="text bgc-light">
+                                {{x.text}}
+                            </div>
+                        </div>
+                    </div>
+             </a>
+            </div>
+        </div>
+</div>

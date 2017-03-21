@@ -1,0 +1,203 @@
+.aqua-shop-tab-container {
+    position: relative;
+    margin-bottom:30px;
+    .__image
+    {
+        position: relative;
+        .__shop-sale-off
+        {
+            position: absolute;
+            top:10px;
+            right:10px;
+            z-index:3;
+            color:$color-gray-4;
+            font-family:$ff-main4;
+            font-weight: 700;
+            padding: 5px 15px;
+            @include easing-animation;
+        }
+    }
+    .shop-tab
+    {
+        position: relative;
+        margin-bottom:30px;
+    }
+    .aqua-overlay-container
+    {
+        max-width:300px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .__overlay-content
+    {
+        opacity:0;
+        @include easing-animation();
+    }
+    .__title ,.__price
+    {
+        font-family:$ff-main4;
+        font-weight:400;
+        word-spacing:2px;
+        letter-spacing:2px;
+        @include easing-animation();
+    }
+    .__title:hover a
+    {
+        color: $color-main1;
+    }
+    .__price
+    {
+        font-size:24px;
+        color:$color-main1;
+        font-weight:400;
+    }
+     .__cart-btn, .__like-btn
+    {
+        position: relative;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        border-radius: 50%;
+        border: 1px solid $color-gray-4;
+        padding: 0px;
+        display: inline-block;
+        @include easing-animation();
+        &:hover
+        {
+            color: $color-light;
+            background-color: $color-gray-4;
+        }
+    }
+    a{
+        @include easing-animation();
+    }
+    .__cart-btn
+    {
+        left:5px;
+    }
+    .__like-btn
+    {
+        right:-5px;
+    }
+    .aqua-overlay-container:hover
+    {
+        .__cart-btn
+        {
+            transform:translate(20px,-25px);
+        }
+        .__like-btn
+        {
+            transform:translate(-20px,25px);
+        }
+        .__overlay-content
+        {
+            opacity:1;
+        }
+        .__shop-sale-off
+        {
+            opacity:0;
+        }
+    }
+}
+._shop-seperator:after
+{
+    content:" ";
+    display: inline-block;
+    width:60px;
+    border-top:1px solid $color-gray-a;
+    height:1px;
+    transform:rotate(135deg);
+}
+.__ro-rating
+{
+    color:$color-light;
+}
+.__ro-rating {
+    margin: 2px;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 2px #444444;
+}
+.__price-discount
+{
+    color:$color-gray-a;
+    padding:5px;
+    text-decoration:line-through;
+}
+.__prev,.__next
+{
+    display: inline-block;
+    margin-bottom:5px;
+    margin-left:5px;
+    margin-right:5px;
+}
+.aqua-pagination
+{
+  .__content {
+    display: inline-block;
+  }
+
+  .__prev,.__next {
+      float: left;
+    line-height: 38px;
+    border: 1px solid $color-gray-a;
+    width: 50px;
+    text-align: center;
+    color: $color-gray-a;
+
+    &:hover:before
+    {
+      color: $color-light;
+      background-color: $color-main1;
+      border-color: $color-main1;
+    }
+  }
+
+  .__prev:before,.__next:before
+  {
+    content: "\e195";
+    display: block;
+    font-size: 20px;
+    font-family: "aqua icon";
+    outline: none;
+    //margin-left:5px;
+    //margin-right:5px;
+  }
+
+  .__next:before
+  {
+    content:"\e197";
+    &:hover
+    {
+      color:$color-light;
+      border-color:$color-main1;
+      background-color: $color-main1;
+    }
+  }
+  .__number
+  {
+    display: inline-block;
+    float: left;
+    width: 40px;
+    border: 1px solid $color-gray-a;
+    color: $color-gray-a;
+    line-height:38px;
+    font-size: 16px;
+    margin-bottom:5px;
+    text-align: center;
+    margin-left:5px;
+    margin-right:5px;
+    &:hover
+    {
+      background-color: $color-main1;
+      color: $color-light;
+      border-color: $color-main1;
+    }
+  }
+
+  .__hover:hover
+  {
+    color: $color-light;
+    background-color: $color-main1;
+    border-color: $color-main1;
+  }
+}

@@ -1,0 +1,101 @@
+<div class="container">
+    <div class="row aqua-blogpot-style-3">
+        <!---------------------------------->
+        <div class="col-md-3 hidden-xs">
+            <div class="ro-slidebar">
+                <div class="__image mgb-25 mgl-5 ">
+                    <img src=" {{listData[0].img}}" alt="">
+                </div>
+                <div class="__note">
+                    {{listData[0].note}}
+                </div>
+            </div>
+        </div>
+        <!---------------------------------->
+        <div class="col-md-9 col-xs-12">
+           <div ng-bind-html="listData[0].content"></div>
+            <div class="__author text-right color-main1 ">
+                {{listData[0].author}}
+            </div>
+
+            <div class="pdb-20">
+               <a href="#">healthy, </a>
+                <a href="#">spa, </a>
+                <a href="#">yoga,</a>
+                <a href="#">moution </a>
+            </div>
+
+            <div class="pdb-46">
+                <a  href="#">
+                    <div class="btn-blog bgc-light-e btn-blog-like border-color-gray-a color-gray-a  hover-bgc-main1 hover-color-light mgr-15">
+                        Like | 15
+                    </div>
+                </a>
+                <a  href="#">
+                    <div class="btn-blog bgc-main1 btn-blog-subcribe color-light hover-bgc-light-e hover-color-gray-a">
+                        Subcribe
+                    </div>
+                </a>
+            </div>
+            <div class="__customer pdb-28">
+                <div class="__head">
+                    <span class="__title italic">Comments :</span>
+                    <a href="#" title="Write a comment"><span class="text-right __write"></span></a>
+                </div>
+                <div>
+                    <hr>
+                </div>
+            </div>
+            <!--------comment---------------->
+            <ul>
+                <li ng-repeat="y in listData[0].custormer">
+                        <img src="{{y.img}}" class="__ro-left">
+                    <div class="__ro-right">
+                        <div class="__name italic pdb-10">
+                        {{y.name}}
+                        </div>
+                        <div class="__comment pdb-10">
+                        {{y.comment}}
+                        </div>
+                        <div class="__time text-right color-main1 ">
+                            <span class="mgr-25"> {{y.time}}</span><a href="#"> <span class="__write"></span></a>
+                        </div>
+                        <hr class="pdb-15">
+                    </div>
+                </li>
+            </ul>
+            <!------------------------------------------>
+            <div class="form-comment">
+                <!--<ul>-->
+                    <!--<li>-->
+                        <!--<input type="text" placeholder="Name">-->
+                        <!--<input type="text" placeholder="Name">-->
+                    <!--</li>-->
+                <!--</ul>-->
+                <form>
+                    <div class="row">
+                        <div class="col-md-6 col-xs-12 mgb-25">
+                            <input type="text" placeholder="Name">
+                        </div>
+                        <div class="col-md-6 col-xs-12 mgb-25">
+                            <input type="email" placeholder="Email">
+                        </div>
+                        <div class="col-xs-12 mgb-25">
+                           <textarea placeholder="Write your comment.." />
+                        </div>
+                        <div class="text-right btn-send mgb-50 mgr-15">
+                            <a href="#"><div class="button-default color-light bgc-main1 hover-bgc-gray-4 upper-case ">send</div></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!---------------------------------->
+        <div class="__blog-image col-sm-6 col-md-3 hidden-xs mgb-30 center-block" ng-repeat="z in listData[0].imgportforlio">
+            <a href="#"><img src="{{z}}" alt="" class="img-responsive"></a>
+        </div>
+        <div class="col-xs-12">
+            <hr>
+        </div>
+    </div>
+</div>

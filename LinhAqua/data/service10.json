@@ -1,0 +1,41 @@
+[
+  {
+    "img":"assets/images/specialize3.png",
+     "title":"",
+     "listitem":
+     [
+       {
+         "name":"Full Body Massage (55 mins)",
+          "price":"$78"
+       },
+       {
+         "name":"Add on: Deep Tissue Massage (per area)",
+          "price":"$78"
+       },
+       {
+         "name":"Hot Stone Massage (55 mins)",
+          "price":"$78"
+       },
+       {
+         "name":"Maternity Massage (55 mins)",
+          "price":"$78"
+       },
+       {
+         "name":"Delux Seated Massage (20 mins)",
+          "price":"$78"
+       },
+       {
+         "name":"Regular Seated Massage (10 mins)",
+          "price":"$78"
+       },
+       {
+         "name":"Body Polish (1 hr)",
+          "price":"$78"
+       },
+       {
+         "name":"Sea Mud Wrap (1 hr)",
+          "price":"$78"
+       }
+     ]
+  }
+]

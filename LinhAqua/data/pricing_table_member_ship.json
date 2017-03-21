@@ -1,0 +1,58 @@
+[
+  {
+      "title":"STANDARD",
+      "img":"assets/images/membership1.jpg",
+      "alt":"assets/images/membership1.jpg",
+       "price":"59",
+      "list":
+      [
+          "Full Body Massage",
+           "Deep Tissue Massage",
+           "Hot Stone Massage",
+           "Body Polish (1 hr)",
+           "Sea Mud Wrap"
+      ]
+  },
+  {
+    "title":"BUSINESS",
+    "img":"assets/images/membership1.jpg",
+    "alt":"assets/images/membership1.jpg",
+    "price":"89",
+    "list":
+    [
+      "Full Body Massage",
+      "Deep Tissue Massage",
+      "Hot Stone Massage",
+      "Body Polish (1 hr)",
+      "Sea Mud Wrap"
+    ]
+  },
+  {
+    "title":"PREMIUM",
+    "img":"assets/images/membership1.jpg",
+    "alt":"assets/images/membership1.jpg",
+    "price":"99",
+    "list":
+    [
+      "Full Body Massage",
+      "Deep Tissue Massage",
+      "Hot Stone Massage",
+      "Body Polish (1 hr)",
+      "Sea Mud Wrap"
+    ]
+  },
+  {
+    "title":"ULTIMATE",
+    "img":"assets/images/membership1.jpg",
+    "alt":"assets/images/membership1.jpg",
+    "price":"109",
+    "list":
+    [
+      "Full Body Massage",
+      "Deep Tissue Massage",
+      "Hot Stone Massage",
+      "Body Polish (1 hr)",
+      "Sea Mud Wrap"
+    ]
+  }
+]

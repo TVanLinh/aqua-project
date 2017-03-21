@@ -1,0 +1,113 @@
+.aqua-process,.aqua-process2
+{
+  position: relative;
+  margin-bottom:100px;
+  .__option
+  {
+    position: absolute;
+    top:-10px;
+    width:100%;
+  }
+  input[type=radio]
+  {
+    display: none;
+  }
+  .__item1,.__item2,.__item3
+  {
+    &:after
+    {
+      content: ' ';
+      display: inline-block;
+      width:20px;
+      height:20px;
+      border-radius:50%;
+      border:2px solid #fff;
+      box-shadow: 0px 0px 0px 1px #aaa;
+      cursor: pointer;
+      background-color: #fff;;
+    }
+  }
+
+  label
+  {
+    font-size:18px;
+    position: absolute;
+  }
+  .__item1
+  {
+    &:after
+    {
+      content: "";
+      font-family: "aqua icon";
+      background-color: $color-main1;
+      line-height: 15px;
+    }
+    &+label
+    {
+      top:25px;
+      left:0;
+    }
+  }
+  .__item2
+  {
+    position: absolute;
+    left:50%;
+    &:after
+    {
+      background-color: $color-light;
+    }
+    &:hover:after
+    {
+      background-color: $color-main1;
+    }
+    &+label
+    {
+      left: 45%;
+      top: 25px;
+    }
+  }
+  .__item3
+  {
+    position: absolute;
+    right:0;
+    &:hover:after
+    {
+      background-color: $color-main1;
+    }
+    &+label
+    {
+      position: absolute;
+      right: 0;
+      top: 25px;
+      font-family:$ff-main2;
+      font-weight:600;
+    }
+  }
+@media (max-width: 480px)
+{
+  .__item2
+  {
+    &+label
+    {
+      left: 34%;
+      top: 25px;
+    }
+  }
+}
+}
+.aqua-process2.aqua-process
+{
+  .__item1:after {
+    content: "4";
+    font-family: "aqua icon";
+    color:  $color-main1;
+    background-color: #fff !important;
+  }
+  .__item2
+  {
+    &:after
+    {
+      background-color: $color-main1;;
+    }
+  }
+}

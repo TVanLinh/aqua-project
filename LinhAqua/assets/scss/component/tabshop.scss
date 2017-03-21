@@ -1,0 +1,128 @@
+.aqua-tabshop
+{
+  text-align: center;
+  position: relative;
+  &:after
+  {
+    content: ' ';
+    position: absolute;
+    border-bottom:1px solid $color-gray-a;
+    display: block;
+    width:100%;
+    top:50%;
+  }
+  ul li
+  {
+    display: inline-block;
+    line-height: 50px;
+    font-family:$ff-main4;
+    font-size:18px;
+    font-weight:400;
+    padding: 5px 30px;
+    margin: 0 5%;
+    position: relative;
+    z-index:555;
+  }
+  //@media(max-width:582px)
+  //{
+  //  ul li{
+  //    //font-size:14px;
+  //    padding: 5px 10px;
+  //  }
+  //}
+  @media(max-width:479px)
+  {
+    &:after
+    {
+      display: none;
+    }
+    ul li{
+      display: block;
+      padding: 5px 10px;
+    }
+  }
+}
+.active
+{
+  font-size:30px;
+  color: red;
+}
+#tabs.ui-widget.ui-widget-content
+{
+    border:none !important;
+}
+#tabs
+{
+   ul {
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+    border: none;
+     a
+     {
+       outline:none;
+       color:$color-gray-4;
+     }
+     li
+     {
+       background: #fff;
+       border: none;
+       outline:none;
+       float: none;
+       margin-left:60px;
+       margin-right:60px;
+       &:hover
+       {
+        a
+        {
+          color: $color-main1;
+        }
+       }
+     }
+     li[aria-selected="true"]
+     {
+       a
+       {
+         font-size:24px;
+       }
+     }
+
+  }
+@media(max-width: 719px)
+{
+  ul li
+
+  {
+    margin-right:0px;
+    margin-left:40px;
+  }
+}
+  @media(max-width: 599px)
+  {
+    ul li
+
+    {
+      margin-left:20px;
+    }
+  }
+  @media(max-width: 479px)
+  {
+    ul
+    {
+      width:100px;
+     // padding:0px;
+      li
+      {
+        margin:0px;
+      }
+      a
+      {
+        padding:0px;
+        padding-bottom:25px;
+        float: none;
+        display: block;
+
+      }
+    }
+  }
+}

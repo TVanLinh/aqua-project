@@ -1,0 +1,20 @@
+[
+  {
+    "img": ["assets/images/service21.jpg","assets/images/service31.jpg"],
+    "title": "SPA",
+    "text": "Aqua is your go-to massage headquarters. With endless modalities and customizations, we have thousands of spa and wellness locations for your next massage"
+     ,"background":"bgc-main4"
+  },
+  {
+    "img": ["assets/images/service22.jpg","assets/images/service32.jpg"],
+    "title": "Beaty",
+    "text": "Known for its ability to remove toxins from the body and increase energy, oil pulling also has tremendous beauty benefits! Routinely pulling oil can help to clear skin and more notably..."
+  ,"background":"bgc-main3"
+  },
+  {
+    "img": ["assets/images/service23.jpg","assets/images/service33.jpg"],
+    "title": "yoga",
+    "text": "Originating in ancient India, the word yoga means to unite or to join, and in yoga, we unite our minds and our bodies through breath. Most Western yoga derives from hatha..."
+    ,"background":"bgc-main2"
+   }
+]

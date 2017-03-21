@@ -1,0 +1,65 @@
+.ro-relate-posts {
+  padding-bottom: 40px;
+  .__relate-item {
+    background-color: $color-light;
+    padding: 40px 20px 40px 20px;
+    max-width:370px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .__image
+  {
+      overflow: hidden;
+      img
+      {
+         @include  easing-animation();
+        &:hover
+        {
+          transform:scale(1.1);
+          opacity:0.5;
+        }
+      }
+  }
+  .__content,.__image
+  {
+    max-width:310px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .__title
+  {
+    font-size:20px;
+    letter-spacing:2px;
+  }
+  .__infor
+  {
+    line-height:1;;
+    font-size:16px;
+  }
+  .__relate-posts-heading
+  {
+     .__title
+     {
+       font-weight:400;
+       font-size:24px;
+       font-family:$ff-main4;
+       &:after
+       {
+         content:"";
+         display: block;
+         width:30px;
+         height:1px;
+         border-top:1px solid;
+         margin-top:10px;
+         margin-bottom:10px;
+       }
+     }
+    @media (max-width: 991px) {
+      text-align: center;
+      .__title:after{
+        margin-left:auto;
+        margin-right: auto;
+      }
+    }
+  }
+}

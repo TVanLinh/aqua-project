@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1 col-xs-12">
+            <div class="aqua-testimonial-container-4">
+                <div class="slider">
+                    <div ng-repeat="x in listData" aqua-slider='{"dots":true,"fade":false}'>
+                        <div class="__image text-center pdb-30">
+                            <div class="__image text-center">
+                                <img src="assets/images/testimonial-2.jpg" alt="" class="img-circle" >
+                            </div>
+                        </div>
+                        <div class="ro-content text-center" </div>
+                            <div class="__name pdb-30 capitalize">
+                                {{x.name}}
+                            </div>
+                            <div class="__comment">
+                                {{x.comment}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,57 @@
+.aqua-navbar-container
+{
+
+  .navbar-style6
+  {
+
+    .__navabar-main>ul>li:nth-child(6)>a>img
+    {
+      display: inline-block;
+      height:100px;
+      margin-top:0px;
+    }
+    .__navabar-main>ul>li:nth-child(6):after
+    {
+      display: none;
+
+    }
+    .__navabar-main>ul>li:hover:after
+    {
+      width:60%;;
+    }
+    @media (min-width: 992px)
+    {
+      .__navbar-logo
+      {
+        display: none;
+      }
+      .__navabar-main
+      {
+        padding-top:40px;
+      }
+      .__navabar-main>ul
+      {
+        background-color: transparent;
+
+      }
+      .__navabar-main > ul > li
+      {
+        &:after
+        {
+          top:0;
+        }
+      }
+      .__navabar-main > ul > li>a
+      {
+        padding:0;
+      }
+    }
+    @media (max-width: 991px)
+    {
+      .__navabar-main>ul>li:nth-child(6)
+      {
+        display: none;
+      }
+    }
+  }
+}

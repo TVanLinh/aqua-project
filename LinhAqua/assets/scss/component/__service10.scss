@@ -1,0 +1,142 @@
+.aqua-service-10
+{
+  .__image
+  {
+    max-width:470px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .title
+  {
+    background-color: #ddd;
+    font-size:16px;
+    font-family:$ff-main4;
+    font-weight:400;
+    word-spacing:2px;
+    cursor: pointer;
+    margin-bottom:25px;
+    padding-top: 0;
+    line-height: 30px;
+    &:before
+    {
+      @include easing-animation();
+      content: "\e177";
+      font-family: "aqua icon";
+      display: inline-block;
+      font-size: 24px;
+      position: relative;
+      top: 6px;
+      margin-right: 20px;
+    }
+    color: $color-gray-4;
+    border:none;
+    outline:none;
+    span
+    {
+      display: none;
+    }
+  }
+  .list-underline{
+    list-style:none;
+    padding:0;
+    margin: 0;
+
+    >li{
+      margin: 0;
+      padding: 0;
+      display: table;
+      padding:5px;
+      >*{
+        display: table-cell;
+        vertical-align:top;
+      }
+      .name,.price
+      {
+        font-family:$ff-main2;
+        font-size:17px;
+        font-weight:700;
+      }
+      .name{
+        width:100%;
+        position: relative;
+        overflow: hidden;
+        &:after{
+          content:"";
+          display: inline-block;
+          position: absolute;
+          border-bottom:1px solid #fff;
+          bottom:0.4em;
+          width:100%;
+          margin-left:15px;
+        }
+      }
+      .price
+      {
+        padding-left:15px;
+      }
+    }
+  }
+}
+#accordion
+{
+    .list-underline
+      {
+        padding-left:50px;
+        padding-right:50px;
+        padding-top: 25px;
+       overflow: auto;
+     }
+  @media(max-width:479px)
+  {
+    .list-underline
+    {
+      padding-left:20px;
+      padding-right:20px;
+      .name:after
+      {
+        display: none;
+      }
+    }
+
+  }
+  .ui-accordion-content
+  {
+    height: 200px;
+    overflow: auto;
+  }
+  .item
+  {
+    padding: 0;
+    background-color: #F5F5F5;
+    margin-bottom:25px;
+    overflow: auto;
+  }
+  .item2
+  {
+    //height: 200px !important;
+  }
+
+h3[aria-selected="true"]
+{
+  &:before
+  {
+    content: '\e170';
+  }
+
+}
+}
+.aqua-service-11
+{
+  #accordion .item {
+    background-color: #c9e9ec;
+  }
+  .title
+  {
+    background-color: #c9e9ec;
+    border:1px solid $color-light;
+ }
+  h3[aria-selected="true"]
+  {
+    background-color:$color-light;
+  }
+}

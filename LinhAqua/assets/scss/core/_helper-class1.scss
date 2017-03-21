@@ -1,0 +1,286 @@
+body {
+    font-family: $ff-main2,$ff-main3;
+  font-weight: 600;
+    font-size: $font-size3;
+    color: $color-text;
+    line-height: $line-height;
+}
+.__title
+{
+    font-family:$ff-main4;
+    font-weight:400;
+    color: $color-gray-4;
+}
+//--a-----
+a{
+  text-decoration:none;
+  transition:all 0.3s ease-in-out;
+  &:hover,&:active,&:visited,&:focus{
+    text-decoration: none;
+    color:$color-gray-4;
+  }
+  color:$color-gray-4;
+}
+.a-td-main1
+{
+  text-decoration: underline $color-main1;
+}
+//----------------------
+.p-fixed
+{
+  position: fixed;
+}
+.p-relative
+{
+  position: relative;
+}
+.p-absolute
+{
+  position: absolute;
+}
+
+li
+{
+  list-style-type:none;
+}
+.border-none{
+  border-color:none;
+}
+.text-center
+{
+   margin-left:0px;
+  margin-right:0px;
+}
+.max-width{
+  width:100%;
+}
+.max-height{
+  height:100%;
+}
+//--type-word
+.italic{
+  font-style:italic;
+}
+.bold{
+  font-weight:bold;
+}
+.upper-case{
+  text-transform:uppercase;
+}
+.lower-case{
+  text-transform:lowercase;
+}
+.capitalize{
+  text-transform:capitalize;
+}
+.easing-animation
+{
+  transition: all 0.3s;
+}
+//----------
+//----can giua theo chieu doc
+//can theo chieu doc
+.cell-vertical-wrapper{
+  width:100%;
+  height:100%;
+  display:table;
+  .cell-vertical-middle{
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .cell-vertical-bottom{
+    display: table-cell;
+    vertical-align: bottom;
+  }
+}
+
+hr{
+   border-top:1px solid #aaa;
+}
+.padding-15{
+  padding:15px;
+}
+
+
+.ratio-1-1{
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-top:100%;
+}
+.ratio-2-2{
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-top:100%;
+}
+.ratio-2-1{
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-top:50%;
+}
+
+.overlay{
+  position: relative;
+  overflow:hidden;
+  .__image{
+    background-size: cover;
+    background-position:center;
+    transition: all 0.4s;
+    position: relative;
+    width: 100%;
+
+    img{
+      width: 100%;
+    }
+
+    &.ov-zoom-in{
+      transform: scale(1);
+    }
+  }
+
+  .__content{
+    transition: all 0.4s;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    color:#fff;
+
+    .table-cell-wrapper{
+      background-color: rgba(0,0,0,0.7);
+    }
+
+    //content animation
+    &.ov-fade{
+      opacity:0;
+    }
+    &.ov-top{
+      transform: translateY(100%);
+    }
+  }
+
+  &:hover{
+    .__image{
+      &.ov-zoom-in{
+        transform: scale(1.1);
+      }
+    }
+
+
+    .__content{
+      &.ov-fade{
+        opacity:1;
+      }
+      &.ov-top{
+        transform: translateY(0);
+      }
+    }
+  }
+}
+//over-lay
+.overlay-wraper
+{
+    position: relative;
+    .ro-overlay
+    {
+      position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+    }
+}
+//Align content
+.table-cell-wrapper{
+  display: table;
+  width: 100%;
+  height: 100%;
+
+  .cell-middle{
+    display: table-cell;
+    vertical-align:middle;
+  }
+  .cell-top{
+    display: table-cell;
+    vertical-align:top;
+  }
+  .cell-bottom{
+    display: table-cell;
+    vertical-align:bottom;
+  }
+}
+///float
+.float-right
+{
+  float: right;
+}
+.float-left
+{
+  float: left;
+}
+
+.bgc-e7
+{
+  background-color: #E7E6E1;
+}
+.fw-4
+{
+  font-weight:400;
+}
+.fw-3
+{
+  font-weight:300;
+}
+.fw-6
+{
+  font-weight:600;
+}
+.fw-7
+{
+  font-weight:700;
+}
+.dp-block
+{
+  display: block;
+}
+.dp-iblock
+{
+  display: inline-block;
+}
+.ml-auto
+{
+  margin-left:auto;
+}
+.mr-auto
+{
+  margin-right:auto;
+}
+@media (max-width:767px)
+{
+    @for $i from 1 to 100
+    {
+       .pd-sm-#{$i*5}
+        {
+          padding:$i*5px;
+        }
+        .pdt-sm-#{$i*5}
+        {
+           padding-top:$i*5px;
+        }
+        .pdb-sm-#{$i*5}
+        {
+          padding-bottom:$i*5px;
+        }
+        .pdl-sm-#{$i*5}
+        {
+          padding-left:$i*5px;
+        }
+        .pdr-sm-#{$i*5}
+        {
+           padding-right:$i*5px;
+        }
+    }
+}

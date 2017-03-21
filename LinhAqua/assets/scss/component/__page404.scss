@@ -1,0 +1,23 @@
+.aqua-404
+{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  background-size: cover;
+  max-width: 1520px;
+  min-height: 61;
+  height: 400px;
+  .table-cell-wrapper
+  {
+    height:400px;
+  }
+  .heading
+  {
+    font-family:$ff-main2;
+    font-size:72px;
+    font-weight:600;
+    line-height:1.2;
+    margin-bottom:20px;
+  }
+}

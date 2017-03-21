@@ -1,0 +1,78 @@
+.aqua-navbar-container
+{
+  .navbar-style4 {
+
+    .__navabar-main > ul > li {
+      padding: 0px;
+      &:hover:after
+      {
+        width:70%;
+      }
+    }
+  }
+    @media(max-width: 991px)
+    {
+      .navbar-style4
+      {
+        .__navbar-logo
+        {
+          padding: 5px;
+          text-align: center;
+        }
+        .__navbar-logo img
+        {
+          padding: 10px;
+          display: inline-block;
+          margin-top: 0px;
+          width:190px;
+        }
+        .__close-menu,.__open-menu
+        {
+          top:-5px;
+        }
+      }
+
+    }
+
+    @media(max-width: 767px) {
+      .navbar-style4 {
+        .__navbar-logo > img {
+          padding: 10px;
+          height: 70px;
+          margin-left: -25px;
+        }
+        .__navabar-main > ul > li:hover>a,  .__navabar-main  .menu-child li:hover a{
+          border-color: $color-gray-4;
+        }
+      }
+    }
+
+    }
+  @media(min-width: 992px)
+  {
+    .navbar-style4 {
+      .__navbar-logo {
+        display: inline-block;
+        width: 25%;
+        float: left;
+        img {
+          display: inline-block;
+        }
+      }
+
+      .__navabar-main {
+        padding-top: 55px;;//70
+      }
+      .__navabar-main > ul > li {
+        width: 100px;
+      }
+    }
+  }
+.__nav-fix-top{
+  position: fixed;
+  padding-top: 0 !important;
+  padding-left: 0 !important;
+  width: 100%;
+  background-color: #fff;
+}
+

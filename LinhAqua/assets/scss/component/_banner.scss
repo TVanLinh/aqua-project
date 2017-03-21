@@ -1,0 +1,63 @@
+.ro-advertise-1-content {
+  text-align: center;
+  display: block;
+  padding: 10px;
+  border: 1px solid #AAAAAA;
+  .ro-advertise-1-text{
+    position: relative;
+    z-index: 1;
+    //background-color: red;
+    color: #444444;
+    padding:10px;
+    background-size: cover ;
+    :after {
+      content: " ";
+      position: absolute;
+      display: block;
+      background: rgba(255, 255, 255, 0.2);
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+  }
+  margin-bottom:40px;
+  h1
+  {
+    margin: 0px;
+    font-size: 46px;
+    font-family: $ff-main2 Sans-serif;
+    margin-bottom: -20px;
+  }
+  p{
+    margin:0px;
+  }
+  i{
+    font-weight:600;
+  }
+}
+.baner-shop.overlay-wraper
+{
+  .aqua-heading .__aqua-heading-title {
+    margin-bottom: 10px;
+  }
+  img
+  {
+    max-width:100%;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .ro-overlay
+  {
+    bottom:0;
+    top:auto;
+    height:auto;
+  }
+  p{
+  //  font-weight: 700;
+    font-size: 20px;
+    padding-bottom:15px;
+  }
+}

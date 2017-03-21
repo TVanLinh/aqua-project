@@ -1,0 +1,53 @@
+.button-default,.button-border{
+    padding-left:39px;
+    padding-right:39px;
+    line-height:44px;
+    @include easing-animation();
+    font-weight:700;
+    font-size:12px;
+    display: inline-block;
+    text-align:center;
+    font-family:$ff-main3;
+}
+.button-border{
+    padding-left:38px;
+    padding-right:38px;
+    line-height:42px;
+    border: 1px solid;
+}
+
+
+.btn-blog
+{
+    @include easing-animation();
+    font-size:12px;
+    display: inline-block;
+    text-align:center;
+    word-spacing: 2px;
+    font-family:$ff-main2;
+    padding-left:24px;
+    padding-right:24px;
+    line-height:30px;
+    font-size:$font-size4;
+    border-radius:15px;
+    font-family:$ff-main2;
+    font-size:14px;
+    font-weight:700;
+    &.btn-blog-like{
+        border:1px solid $color-gray-a;
+        &:hover{
+            border-color: $color-main1;
+
+        }
+    }
+    &.btn-blog-subcribe{
+        border:1px solid $color-main1;
+        &:hover{
+            border-color: $color-gray-a;
+        }
+    }
+}
+
+
+
+

@@ -1,0 +1,8 @@
+.call-to-action {
+  position: relative; }
+  .call-to-action .ro-left {
+    width: 60%;
+    left: 0; }
+  .call-to-action .ro-right {
+    width: 40%;
+    position: absolute; }

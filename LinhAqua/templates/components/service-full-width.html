@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4 mgt-xs--10" ng-repeat="x in listData">
+            <a href="#">
+                <!----type-2------------------->
+                <div class=" service-item-style-3 text-center {{x.background}}">
+                        <div class="__title upper-case">
+                           <div class="cell-vertical-wraper">
+                                <div class="cell-vertical-middle">
+                                    <h3>{{x.title}}</h3>
+                                    <div class="__seperator">
+                                </div>
+                           </div>
+                            </div>
+                        </div>
+                        <div class="text pdt-20 pdb-20 pdl-5 pdr-5">
+                            {{x.text}}
+                        </div>
+                    <div class="__image ">
+                        <img src="{{x.img[0]}}" atl="service 1" class="img-responsive ">
+                    </div>
+                </div>
+                <!---------------->
+            </a>
+        </div>
+    </div>
+</div>

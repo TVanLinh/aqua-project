@@ -1,0 +1,63 @@
+<div class=" aqua-blogpot-slidebar ">
+    <!------------------------------------->
+     <div class="ro-service pdb-30 ">
+                <div class=" upper-case pdb-40">
+                        <div class="button-border bgc-light-e btn-title">SERVICES</div>
+                </div>
+                <div class="__content">
+                    <ul class="mgl--39">
+                        <li ng-repeat="x in listData[0].service">{{x}}</li>
+                    </ul>
+                </div>
+     </div>
+    <!------------------------------------->
+        <div class="ro-lated-post">
+                <div class=" upper-case pdb-50">
+                    <div class="button-border bgc-light-e btn-title">LATEST POST</div>
+                </div>
+                <div class="__content">
+                    <div ng-repeat="y in listData[0].latepost">
+                        <div >
+                            <div class="__late-post-left ">
+                                <a href="#"><img src="{{y.img}}" alt="" class="float-left mgr-15 img-responsive"></a>
+                            </div>
+                            <div class="__late-post-right >
+                                <a href="#" class=" hover-color-main1">{{y.content}}</a><br>
+                                <span class="__time">{{y.time}}</span>
+                            </div>
+                        </div>
+                  </div>
+                </div>
+       </div>
+    <!------------------------------------->
+    <div class="ro-addr ">
+        <div class="  pdb-50 mgt-20">
+            <div class="button-border bgc-light-e btn-title upper-case">CONTACT US</div>
+            <table class="ro-contact mgt-30">
+                <tbody><tr>
+                    <th>Email:</th>
+                    <td>Business@bluecadet.com</td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>AQUAspa.@domain.com</td>
+                </tr>
+                <tr>
+                    <th>Hotline:</th>
+                    <td>123.645.87 / 028.299.024</td>
+                </tr>
+                <tr>
+                    <th>Add:</th>
+                    <td>1234 Frankford ave</td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>Philadelphia, PA 12457</td>
+                </tr>
+                </tbody></table>
+        </div>
+
+    </div>
+</div>
+
+

@@ -1,0 +1,59 @@
+.aqua-blogpot-slidebar
+{
+    .btn-title
+    {
+        width:100%;
+        font-size:16px;
+        font-weight: 400;
+        border-color: $color-gray-a;
+        line-height: 38px;
+    }
+    .ro-service
+    {
+        .__content li:before
+        {
+          content: "\e177";
+          font-family: "aqua icon";
+          margin-right: 10px;
+        }
+        .__content li
+        {
+          line-height: 40px;
+          font-size:18px;
+        }
+    }
+  .__late-post-left
+  {
+    img
+    {
+      @include easing-animation();
+      &:hover
+      {
+        opacity:0.7;
+      }
+    }
+  }
+  .__late-post-right
+  {
+      margin-left:105px;
+      float: right;
+      transform: translateY(-65px);
+    .__time
+    {
+      color:$color-gray-a;
+      margin-top: 15px;
+      position: absolute;
+    }
+  }
+  .ro-contact{
+    th
+    {
+      padding: 10px 10px 0px 0px;
+      color: #000;
+    }
+    td
+    {
+      padding:11px 0 0 0;
+    }
+  }
+}

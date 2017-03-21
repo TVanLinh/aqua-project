@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+.aqua-gallery-container {
+  //padding-bottom:30px;
+  .slider {
+    width: 50%;
+    margin: 0px auto;
+    width: 100%;
+    .ro-item {
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+    font-size:0;
+  }
+  .slick-slide {
+    margin: 0px 5px;
+   a:focus{
+      outline:none;
+    }
+  }
+  .slick-active{
+    outline:none;
+  }
+  .slick-slide img {
+    width: 100%;
+  }
+
+  .slick-prev,.slick-next
+  {
+    &:before
+    {
+      content:'e';
+      font-family: "aqua icon" !important;
+      color:$color-gray-4;
+      font-size:24px;
+      padding:10px 1px;
+      background-color: rgba(249,247,247,0.6);
+      border-radius:5px;
+    }
+  }
+  .slick-prev {
+    left: 25px;
+    z-index: 2;
+  }
+  .slick-next {
+    right: 25px;
+    &:before {
+      content:'f';
+    }
+  }
+  button
+  {
+    position: absolute;
+    background:none;
+    border:none;
+    top:50%;
+    height:50px;
+    margin-top:-25px;
+    outline:none;
+  }
+}

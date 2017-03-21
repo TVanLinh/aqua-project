@@ -1,0 +1,17 @@
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.8;
+  margin-top: 0;
+  margin-bottom: 20px;
+  letter-spacing: 0.05em; }
+  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: inherit; }
+
+h1, h2 {
+  letter-spacing: 0; }
+
+p {
+  font-weight: 400;
+  margin: 0 0 25px 0;
+  padding: 0;
+  line-height: 1.8;
+  letter-spacing: 0.05em; }

@@ -1,0 +1,103 @@
+.aqua-head-container
+{
+  .__head-style1
+  {
+    //padding-bottom:40%;
+    height:100vh;
+    background-size:cover;
+    background-position: center center;
+    background-repeat:no-repeat;
+    .content
+    {
+      width:100%;
+      height: 300px;
+      padding-top:160px;
+      img {
+        opacity: 0.7;
+        @include easing-animation();
+        &:hover {
+          opacity: 1;
+        }
+        margin-bottom:50px;
+    }
+      padding-bottom:100px;
+    }
+    .__text
+    {
+      font-size:60px;
+      color:$color-light;
+    }
+    .__button-follow
+    {
+      position: absolute;
+      width: 100%;
+      bottom: 40px;
+    }
+    .__button-follow a
+    {
+      &:after
+      {
+        color: #FFFFFF;
+        transition: all 0.4s;
+        content: "a";
+        font-family: "aqua icon" !important;
+        font-size: 25px;
+        border-radius:50%;
+        border:1px solid #fff;
+        width:50px;
+        height:50px;
+        padding:5px;
+        @include easing-animation();
+      }
+      &:hover:after
+      {
+        color: $color-main1;
+        border-color: $color-main1;
+      }
+    }
+    @media (max-width: 1199px) {
+      .content
+      {
+        padding-top: 140px;
+      }
+    }
+    @media (max-width: 991px)
+    {
+        height:auto;
+        padding-bottom:60px;
+        .content
+        {
+          padding-top:60px;
+          img
+          {
+            width:80px;
+          }
+        }
+      .__text
+      {
+        font-size: 30px;
+      }
+    }
+    @media (max-width: 767px)
+    {
+      .content
+      {
+        padding-top:100px;
+        margin-bottom:30px;
+        img
+        {
+          width:80px;
+        }
+      }
+      .__text
+      {
+        font-size: 20px;
+      }
+      .__button-follow
+      {
+        bottom: auto;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,58 @@
+[
+  {
+      "title":" Bath salt box",
+      "img":"assets/images/shoptab1.jpg",
+       "price":"$30",
+       "discount":"",
+       "rating":"5"
+  },
+  {
+    "title":" Bath salt box",
+    "img":"assets/images/shoptab2.jpg",
+    "price":"$30",
+    "discount":"",
+    "rating":"5"
+  },
+  {
+    "title":" Bath salt box",
+    "img":"assets/images/shoptab3.jpg",
+    "price":"$30",
+    "discount":" &#9733; &#9733; &#9733; &#9733; ★;",
+    "rating":"5"
+  },
+  {
+    "title":" Bath salt box",
+    "img":"assets/images/shoptab4.jpg",
+    "price":"$30",
+    "discount":"",
+    "rating":"5"
+  },
+  {
+    "title":" Bath salt box",
+    "img":"assets/images/shoptab5.jpg",
+    "price":"$30",
+    "discount":"",
+    "rating":"5"
+  },
+  {
+    "title":" Bath salt box",
+    "img":"assets/images/shoptab6.jpg",
+    "price":"$30",
+    "discount":"",
+    "rating":"5"
+  },
+  {
+    "title":" Bath salt box",
+    "img":"assets/images/shoptab7.jpg",
+    "price":"$30",
+    "discount":" &#9733; &#9733; &#9733; &#9733; ★;",
+    "rating":"5"
+  },
+  {
+    "title":" Bath salt box",
+    "img":"assets/images/shoptab8.jpg",
+    "price":"$30",
+    "discount":"",
+    "rating":"5"
+  }
+]

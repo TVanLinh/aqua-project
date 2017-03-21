@@ -1,0 +1,9 @@
+.aqua-portfolio-item {
+  position: relative; }
+  .aqua-portfolio-item .__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    max-width: 100%;
+    background-color: red; }

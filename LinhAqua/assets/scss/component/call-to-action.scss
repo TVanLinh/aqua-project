@@ -1,0 +1,48 @@
+.call-to-action
+{
+  position: relative;
+  height:320px;
+  .ro-left
+  {
+    width:60%;
+    left:0;
+    height:100%;
+  }
+  .title
+  {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: $ff-main4;
+    margin-bottom: 25px;
+    word-spacing: 2px;
+  }
+  .ro-right
+  {
+    width:40%;
+    position: absolute;
+    height:100%;
+    background-repeat:no-repeat;
+    background-size:cover;
+    right:0;
+    top:0;
+   // transform:translateX(-20px);
+    background-position:center left;
+  }
+  @media (max-width:767px) {
+    .ro-left {
+      position: absolute;
+      width: 100%;
+
+    }
+    .ro-right
+    {
+      //width: 100%;
+      //z-index:1;
+    }
+    .table-cell-wrapper
+    {
+      position: relative;
+      z-index:5;
+    }
+  }
+}

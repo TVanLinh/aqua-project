@@ -1,0 +1,93 @@
+<div class="aqua-blogpot-container">
+    <div class=" aqua-blogpot-style-3">
+        <!---------------------------------->
+        <div class="">
+            <div class="__image mgb-30">
+                <img src="{{listData[0].img}}" alt="" class="img-responsive">
+            </div>
+            <div class="__title mgb-30 capitalize">
+                {{listData[0].title}}
+            </div>
+
+            <div class="__infor text-left mgb-50 ">
+                    Posted:<a  href="#"> <span class="__time color-main1 mgr-50 hover-color-gray-4 ">{{listData[0].time}} </span></a>
+                    By <a href="#"><span class="__author color-main1 mgr-50 hover-color-gray-4"> {{listData[0].author}}</span></a>
+                    Comment: <a href="#"><span class="__number color-main1 hover-color-gray-4"> {{listData[0].number}}</span></a>
+            </div>
+
+            <div ng-bind-html="listData[0].content"></div>
+            <div class="pdb-20">
+                <a href="#">healthy, </a>
+                <a href="#">spa, </a>
+                <a href="#">yoga,</a>
+                <a href="#">moution </a>
+            </div>
+
+            <div class="pdb-46">
+                <a  href="#">
+                    <div class="btn-blog bgc-light-e btn-blog-like border-color-gray-a color-gray-a  hover-bgc-main1 hover-color-light mgr-15">
+                        Like | 15
+                    </div>
+                </a>
+                <a  href="#">
+                    <div class="btn-blog bgc-main1 btn-blog-subcribe color-light hover-bgc-light-e hover-color-gray-a">
+                        Subcribe
+                    </div>
+                </a>
+            </div>
+            <div class="__customer pdb-28">
+                <div class="__head">
+                    <span class="__title italic">Comments :</span>
+                    <a href="#" title="Write a comment"><span class="text-right __write"></span></a>
+                </div>
+                <div>
+                    <hr>
+                </div>
+            </div>
+            <!--------comment---------------->
+            <ul>
+                <li ng-repeat="y in listData[0].custormer">
+                    <img src="{{y.img}}" class="__ro-left">
+                    <div class="__ro-right">
+                        <div class="__name italic pdb-10">
+                            {{y.name}}
+                        </div>
+                        <div class="__comment pdb-10">
+                            {{y.comment}}
+                        </div>
+                        <div class="__time text-right color-main1 ">
+                            <span class="mgr-25"> {{y.time}}</span><a href="#"> <span class="__write"></span></a>
+                        </div>
+                        <hr class="pdb-15">
+                    </div>
+                </li>
+            </ul>
+            <!------------------------------------------>
+            <div class="form-comment">
+                <form>
+                    <div class="row">
+                        <div class="col-md-6 col-xs-12 mgb-25">
+                            <input type="text" placeholder="Name">
+                        </div>
+                        <div class="col-md-6 col-xs-12 mgb-25">
+                            <input type="email" placeholder="Email">
+                        </div>
+                        <div class="col-xs-12 mgb-25">
+                            <textarea placeholder="Write your comment.." class="pd-30"></textarea>
+                        </div>
+                        <div class="text-right btn-send mgb-50 mgr-15">
+                            <a href="#"><div class="button-default color-light bgc-main1 hover-bgc-gray-4 upper-case ">send</div></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 hidden-xs" ng-repeat="z in listData[0].imgportforlio">
+                    <div ng-if="$index<3" class="__blog-image mgb-30">
+                        <img src="{{z}}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,44 @@
+.aqua-navbar-container
+{
+  .navbar-style7
+  {
+
+  }
+  @media(max-width:767px)
+  {
+    .navbar-style7
+    {
+      .__custom-visible-xs
+      {
+        height: 300px;
+        position: relative;
+        background-color: #C6D9C6;
+        top: 0px;
+        margin-bottom: 20px;
+        .table-cell-wrapper
+        {
+          display: table;
+        }
+        img
+        {
+          //display: block;
+          z-index:444;
+        }
+        .__title
+        {
+          font-size:24px;
+          color: $color-light;
+        }
+      }
+      .toggle-menu,.__cart2
+      {
+        z-index:44444;
+      }
+    }
+  }
+}
+.aqua-head-container
+{
+
+}
+

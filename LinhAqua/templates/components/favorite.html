@@ -1,0 +1,91 @@
+<div class="container aqua-favorite-container">
+    <div class="row">
+        <div class="col-xs-12 mgb-20">
+            <div class="title text-center " style="font-size: 18px;">
+                CHOOSE YOUR FAVORITE DEMO BELOW
+            </div>
+        </div>
+        <!----------------->
+        <div ng-repeat="x in listData">
+            <div class="col-md-4 col-sm-6 col-xs-12 center-block mgb-10 "  ng-if="$index==0||$index==1||$index==2||$index==3||$index==4">
+                <div class="" >
+                    <div class=" aqua-favorite-item-1   overlay-wraper mgb-5 " >
+                        <div class="__image">
+                            <img src="{{x.img}}" alt=""  class="img-responsive">
+                        </div>
+                        <div class="ro-overlay pd-10">
+                            <div class="table-cell-wrapper">
+                                <div class="cell-middle text-center">
+                                    <a href="#!{{x.href}}" target="_blank"> <div class="button-border bgc-light color-gray-4 hover-bgc-main1 hover-border-c-main1 hover-color-light upper-case btn-view">
+                                        view Demo
+                                    </div></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title text-center">
+                        {{x.title}}
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 center-block mgb-10 "  ng-if="$index==5||$index==6">
+                <div class="__new mgt--40">
+                    <div class=" aqua-favorite-item-1   overlay-wraper mgb-5 " >
+                        <div class="__image">
+                            <img src="{{x.img}}" alt=""  class="img-responsive">
+                        </div>
+                        <div class="ro-overlay pd-10">
+                            <div class="table-cell-wrapper">
+                                <div class="cell-middle text-center">
+                                    <a href="#!{{x.href}}" target="_blank"> <div class="button-border bgc-light color-gray-4 hover-bgc-main1 hover-border-c-main1 hover-color-light upper-case btn-view">
+                                        view Demo
+                                    </div></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title text-center">
+                        {{x.title}}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!------------------>
+        <div class="col-md-4 col-sm-6 col-xs-12 center-block">
+                <div class=" aqua-favorite-item-2  mgb-30 overlay-wraper  ">
+                    <div class="__image opacity-0">
+                        <img src="{{listData[0].img}}" alt=""  class="img-responsive">
+                    </div>
+                    <div class="ro-overlay pd-10">
+                        <div class="table-cell-wrapper">
+                            <div class="cell-middle text-center">
+                                <div class=" title upper-case  ">
+                                     COMMING SOON ...
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12 center-block">
+            <div class=" aqua-favorite-item-2  mgb-30 overlay-wraper  ">
+                <div class="__image opacity-0">
+                    <img src="{{listData[0].img}}" alt=""  class="img-responsive">
+                </div>
+                <div class="ro-overlay pd-10">
+                    <div class="table-cell-wrapper">
+                        <div class="cell-middle text-center">
+                            <div class="title upper-case ">
+                                COMMING SOON ...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------------>
+    </div>
+</div>
+<style>
+</style>

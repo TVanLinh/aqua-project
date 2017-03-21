@@ -1,0 +1,148 @@
+.aqua-navbar-container
+{
+  .navbar-style5
+  {
+      .__cart,.__cart2
+      {
+        display: none;
+        &:after
+        {
+          position: absolute;
+          content: '2';
+          display: inline-block;
+          height: 20px;
+          line-height: 20px;
+          width: 20px;
+          border-radius: 50%;
+          text-align: center;
+          background-color: #84C348;
+          color: #fff;
+          margin-top:-5px;
+
+          font-size:14px;
+          margin-left:-5px;
+        }
+      }
+    .__cart
+    {
+      &:after
+      {
+        padding-left:2px;
+      }
+
+    }
+  }
+  @media(max-width:767px)
+  {
+    .navbar-style5
+    {
+       .__navbar-logo
+       {
+         margin-top:5px;
+       }
+      .__cart2 {
+        display: block;
+        position: absolute;
+        right:70px;
+        top:30px;
+        color: $color-light;
+        &:after
+        {
+          margin:0px;
+          right:-18px;
+          top: -3px;
+        }
+      }
+      .toggle-menu
+      {
+          top: 25px;
+          span
+          {
+            background-color: $color-light;
+          }
+          &:after,&:before
+          {
+            border-color:  $color-light;
+          }
+      }
+      .__custom-visible-xs
+      {
+        height:0;
+        .table-cell-wrapper
+        {
+         display: none;
+        }
+      }
+    }
+  }
+  @media(min-width:768px)
+  {
+    .navbar-style5
+    {
+      .__navabar-main > ul {
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+      .__navbar-logo {
+        padding-top: 20px;
+        img
+        {
+          margin-left:-15px;
+          margin-right:15px;
+          width:250px;
+          padding-top:30px;
+        }
+      }
+      .__cart
+      {
+        display: block;
+      }
+    }
+  }
+    @media(min-width:768px)
+    {
+      .navbar-style5
+      {
+       .__navabar-main > ul {
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+        .__navbar-logo {
+          padding-top: 20px;
+          img
+          {
+            margin-left:-15px;
+            margin-right:15px;
+          }
+        }
+      }
+    }
+
+    @media(min-width:992px)
+    {
+      .navbar-style5 {
+        .__navbar-logo {
+          padding-top: 20px;
+          img
+          {
+            padding-top: 10px;
+            width: 90%;
+          }
+        }
+        .__navabar-main {
+          padding-top: 50px;
+        }
+
+      }
+    }
+  @media(min-width:1199px)
+  {
+    .navbar-style5 {
+      .__navbar-logo {
+        img
+        {
+          width:90%;
+          padding-top:0px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+<div class=" aqua-post-container clearfix">
+    <div class=" aqua-post-item ">
+        <div class=" ro-image" style="background-image: url({{listData[0].img}});">
+
+        </div>
+        <div class=" ro-content  bgc-item1  pdt-30 pdl-60 pdr-40">
+                    <div class="__title italic pdb-30">
+                        {{listData[0].title}}
+                    </div>
+                    <div class="__content pdb-60">
+                        {{listData[0].content}}
+                    </div>
+                    <div class="__infor italic text-right ">
+                        Post:<span class="mgr-15">{{listData[0].time}}</span>/
+                        <span class="mgl-15 mgr-15">By:{{listData[0].author}}</span>/
+                        <span class="mgl-15">Comment:{{listData[1].number}}</span>
+                    </div>
+            <div class="__rule1"></div>
+        </div>
+    </div>
+    <div class=" aqua-post-item">
+        <div class="ro-content bgc-item2 pdt-40 pdl-40 pdr-40">
+                <div class="__title italic pdb-30">
+                    {{listData[1].title}}
+                </div>
+                <div class="__content pdb-60 ">
+                    {{listData[1].content}}
+                </div>
+                <div class="__infor italic text-right ">
+                    Post:<span class="mgr-15">{{listData[0].time}}</span>/
+                    <span class="mgl-15 mgr-15">By:{{listData[0].author}}</span>/
+                    <span class="mgl-15">Comment:{{listData[1].number}}</span>
+                </div>
+            <div class="__rule2"></div>
+        </div>
+        <div class="  ro-image" style="background-image: url({{listData[1].img}});">
+
+        </div>
+    </div>
+</div>

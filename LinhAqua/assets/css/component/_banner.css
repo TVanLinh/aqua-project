@@ -1,0 +1,23 @@
+.ro-advertise-1-content {
+  text-align: center;
+  display: block;
+  padding: 10px;
+  border: 1px solid #AAAAAA;
+  margin-bottom: 40px; }
+  .ro-advertise-1-content .ro-advertise-1-text {
+    position: relative;
+    z-index: 1;
+    background-image: url(../assets/img/banner.jpg);
+    color: #444444;
+    padding: 10px;
+    background-size: cover; }
+    .ro-advertise-1-content .ro-advertise-1-text :after {
+      content: " ";
+      position: absolute;
+      display: block;
+      background: rgba(255, 255, 255, 0.1);
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1; }

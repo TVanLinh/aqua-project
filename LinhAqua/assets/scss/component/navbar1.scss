@@ -1,0 +1,137 @@
+.aqua-navbar-container
+{
+  .navbar-style1
+  {
+
+   // border-top:1px solid;
+   // border-bottom:1px solid;
+    ul
+    {
+      padding:0px;
+    }
+    .ro-left
+    {
+    //  position: relative;
+     // left:-15px;
+    }
+      .ro-center li
+      {
+        display:inline-block;
+        text-align: center;
+        font-size:14px;
+        padding-right:33px;
+        &:last-child
+        {
+          padding-right:0px;
+        }
+      }
+      .title
+      {
+        font-style: 14px;
+        font-family:$ff-main4;;
+        font-weight:400;
+      }
+      .__item
+      {
+        position: relative;
+        text-align: center;
+        padding-top:10px;
+        padding-bottom:0px;
+        &:after
+        {
+          content: ' ';
+          display: block;
+          text-align: center;
+          border-top:1px solid;
+          margin-left:auto;
+          margin-right:auto;
+          width:0;
+          @include easing-animation();
+        }
+        &:hover:after
+        {
+          width:100%;;
+        }
+      }
+    .btn-group-custom
+    {
+      background: #fff;
+      border: 1px solid #fff;
+      border-color: $color-light;
+      border-radius:0;
+      color:$color-gray-4;
+      font-family:$ff-main2;
+      font-weight:700;
+    }
+    .btn-default-custom
+    {
+      border-color: $color-light;
+      border-radius:0;
+      @include easing-animation();
+      &:hover,&:focus
+      {
+        background:$color-light;
+        border-color: $color-light;
+        color:$color-main1;
+      }
+      &:focus
+      {
+        background: $color-main1;
+        color:$color-light;
+
+      }
+
+    }
+    .btn-default-custom:focus+ul.dropdown-menu
+    {
+      display: block;
+      color: $color-gray-4;
+      border-radius: 0;
+      box-shadow: none;
+    }
+    .icon-expand22
+    {
+      font-size:10px;
+    }
+  }
+  .header-1
+  {
+    .logo
+    {
+      height:100px;
+    }
+    .__cart:before
+    {
+      content: '2';
+      position: absolute;
+      display: inline-block;
+      right: 0px;
+      height: 20px;
+      line-height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      text-align: center;
+      background-color: #84C348;
+      top: -3px;
+      color: #fff;
+    }
+    .icon-ecommerce-cart-content
+    {
+      font-size:20px;
+    }
+    .__image
+    {
+      width:200px;
+      margin-left:auto;
+      margin-right:auto;
+
+      img
+      {
+        border:2px solid;
+        width:90%;
+        padding:10px;
+      }
+    }
+  }
+
+}

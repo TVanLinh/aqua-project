@@ -1,0 +1,129 @@
+.aqua-post-container
+{
+  .aqua-post-item
+  {
+    position: relative;
+    .ro-content:nth-child(2n)
+    {
+      margin-left:auto;
+    }
+    .ro-content:nth-child(2n+1)
+    {
+      margin-right:auto;
+    }
+  }
+  .ro-image,.ro-content
+  {
+    width:50%;;
+  }
+  .ro-image
+  {
+    background-size:cover;
+    position: absolute;
+    background-repeat:none;;
+    width:50%;
+    height:100%;
+    top:0;
+    left:0;
+    &:nth-child(2n)
+    {
+      left:auto;
+      right:0;
+    }
+  }
+  .ro-content
+  {
+    position: relative;
+    padding-bottom:60px;
+    .__rule1
+    {
+      position: absolute;
+      top:60px;
+      left:0;
+      transform:translateX(-30px);
+      width:0;
+      border-color: #ABDCE1;
+      border-style:solid;
+      border-right-width:30px;
+      border-bottom-width:20px;
+      border-top-width:20px;
+      border-left-width:0px;
+      border-top-color: transparent;
+      border-bottom-color:transparent;
+    }
+    .__rule2
+    {
+      position: absolute;
+      top:60px;
+      right:0;
+      transform:translateX(30px);
+      width:0;
+      border-color: #D9D8C1;
+      border-style:solid;
+      border-left-width:30px;
+      border-bottom-width:20px;
+      border-top-width:20px;
+      border-right-width:0px;
+      border-top-color: transparent;
+      border-bottom-color:transparent;
+      z-index:555;
+    }
+  }
+  .__title
+  {
+      font-size:36px;
+      color: $color-light;
+     &:after
+     {
+       content: ' ';
+       display: block;
+       width:50px;
+       border:1px solid  $color-light;
+     }
+  }
+  .__infor
+  {
+    font-weight:400;
+    font-size:16px;
+  }
+  @media  (max-width:991px)
+  {
+    .__rule1,.__rule2
+    {
+      display: none;
+    }
+    .aqua-post-item
+    {
+      position: relative;
+      .ro-content
+      {
+        width:100%;
+        padding-right:15px;
+        padding-left:15px;
+      }
+      .ro-image
+      {
+        position: relative;
+      }
+    }
+    .__title
+    {
+      font-size: 24px;
+    }
+  }
+  @media  (max-width:767px)
+  {
+    .__title
+    {
+      font-size: 18px;
+    }
+  }
+}
+.bgc-item1
+{
+  background-color: #ABDCE1;
+}
+.bgc-item2
+{
+  background-color: #D9D8C1;
+}

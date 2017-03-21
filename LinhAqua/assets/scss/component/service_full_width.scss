@@ -1,0 +1,56 @@
+.service-item-style-3
+{
+     padding-bottom:0px;
+      margin-bottom:60px;
+    @include easing-animation;
+    .__image
+    {
+        padding-bottom:0px;
+      @include  easing-animation();
+    }
+    img
+    {
+      margin:0px;
+    }
+    .__title
+    {
+         color: $color-light;
+        // background:$color-main4 ;
+         margin-bottom:0px;
+         padding-top:20px;
+         padding-bottom:20px;
+         font-size:24px;
+         @include  easing-animation();
+    }
+    .__seperator
+    {
+      padding-bottom:0px;
+    }
+      .text
+    {
+        background-color: $color-light-e;
+    }
+   &:hover
+   {
+     //  padding-top:0;
+   //  padding-bottom:10px;
+      .__title, .__seperator:after {
+        color: $color-light;
+        border-color: $color-light;
+      }
+
+     .__seperator:after {
+        width:30px;;
+     }
+     .__title
+     {
+        padding-bottom:30px;
+       margin-top:-10px;
+     }
+     .__image
+     {
+       padding-top:10px;
+       margin-bottom:-10px;
+     }
+   }
+}

@@ -1,0 +1,41 @@
+<div class="bgc-light-e pd-top-10">
+    <div class="container">
+        <div class="row ro-relate-posts">
+          <!------->
+            <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8">
+                <div class="__relate-posts-heading pd-bottom-6 " >
+                    <H1 class="__title">REALATED POSTS</H1>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                        magna aliquam erat volutpat ...</p>
+                </div>
+            </div>
+            <!----->
+            <div class="clearfix">
+            </div>
+            <!------------------------------>
+            <div class="">
+                <div class="col-md-4 col-xs-12 center-block" ng-repeat="x in listData">
+                    <div class="__relate-item pd-bottom-6 margin-bottom-6 ">
+                        <div >
+                            <div class="__image ">
+                               <a href="#"> <img src="{{x.img}}" alt="" class="img-responsive text-center"></a>
+                            </div>
+                            <div class="__content pd-top-5 ">
+                                <div >
+                                    <a href="#" class=""><h4 class="__title .capitalize hover-color-main1 easing-animation">{{x.title}}</h4></a>
+                                </div>
+                                <div class="__infor pd-bottom-3 italic">
+                                    {{x.infor}}
+                                </div>
+                                <div class="__content">
+                                    {{x.content}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-------------------------------------------------------->
+        </div>
+    </div>
+</div>

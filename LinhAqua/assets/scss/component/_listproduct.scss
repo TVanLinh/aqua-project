@@ -1,0 +1,107 @@
+.aqua-pricing-table-container
+{
+
+   .aqua-pricing-table
+   {
+      max-width:300px;
+      border:1px solid $color-gray-a;
+      margin-bottom:30px;
+       margin-left:auto;
+       margin-right:auto;
+     cursor: pointer;
+      .__title
+      {
+            padding:15px 30px;
+            font-family:$ff-main4;
+            font-weight:700;
+      }
+     .over_lay_wraper
+     {
+
+         width:100%;
+         position:relative;
+         .__image
+         {
+             img
+             {
+                 width: 100%;
+             }
+         }
+
+         .__over_lay
+         {
+              position:absolute;
+              top:0;
+              left:0;
+              height:100%;
+              width: 100%;
+              padding:10px;
+
+             .__over-lay-content
+             {
+                 // color:red;
+                 @include easing-animation();
+                  text-align: center;
+                  font-family:$ff-main4;
+                  font-size:18px;
+                  font-weight:300;
+                  background-color:rgba(255, 255, 255, 0.7);
+                  transform:scale(0);
+                .__price
+                {
+                  font-family:$ff-main2;
+                  font-size:45px;
+                  font-weight:600;
+                }
+             }
+         }
+
+     }
+     .__content
+     {
+       .__item
+       {
+            &:after
+            {
+                content:"";
+                display: block;
+                width:200px;
+                border-top:1px solid $color-gray-a;
+                margin-left:auto;
+                margin-right:auto;
+            }
+            &:last-child
+            {
+
+               &:after
+               {
+               }
+            }
+       }
+     }
+     &:hover
+     {
+         .over_lay_wraper{
+           .__over_lay
+           {
+             .__over-lay-content{
+               transform:scale(1);
+             }
+           }
+         }
+       }
+     }
+  @media (min-width:992px) {
+    .over_lay_wraper .__over_lay .__over-lay-content .__price
+    {
+      line-height:60px;
+    }
+  }
+  @media (max-width:300px)
+  {
+    p
+    {
+      line-height:1.2;
+    }
+  }
+}

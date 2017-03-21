@@ -1,0 +1,18 @@
+[
+  {
+    "img": "assets/images/fw-slider1.png",
+     "bgc":"bgc-main2"
+  },
+  {
+    "img": "assets/images/fw-slider2.png",
+    "bgc":"bgc-main3"
+  },
+  {
+    "img": "assets/images/fw-slider1.png",
+     "bgc":"bgc-main2"
+  },
+  {
+    "img": "assets/images/fw-slider2.png",
+    "bgc":"bgc-main3"
+  }
+]

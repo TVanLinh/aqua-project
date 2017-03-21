@@ -1,0 +1,48 @@
+h1, h2, h3, h4, h5, h6 {
+  line-height:    1.8;
+  margin-top:     0;
+  //margin-bottom:  20px;
+  letter-spacing: 0.05em;
+
+  a {
+    color: inherit;
+  }
+}
+
+h1, h2 {
+  letter-spacing: 0;
+}
+p {
+ // font-weight:    400;
+  margin:         0 0 25px 0;
+  padding:        0;
+  line-height:    1.8;
+ // letter-spacing: 0.05em;
+}
+.ff-main1
+{
+  font-family:$ff-main1;
+}
+.ff-main2
+{
+  font-family:$ff-main2;
+}
+.ff-main3
+{
+  font-family:$ff-main3;
+}
+.ff-main4
+{
+  font-family:$ff-main4;
+}
+input,textarea
+{
+  @include easing-animation();
+  &:focus
+  {
+    border:1px solid $color-main1;
+  }
+  outline:none;
+  border:1px solid $color-gray-4;
+  border-radius: 0;
+}

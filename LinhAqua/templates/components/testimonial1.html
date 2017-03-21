@@ -1,0 +1,59 @@
+<div class="container-fluid aqua-testimonial-container-1 ">
+    <div class="container">
+        <div class="row ">
+            <!-----content---->
+            <div class="col-md-8 col-xs-12  " >
+                <div class="__testimonial-container-1">
+                    <div class="__ro-content text-center scroll" >
+                        <!------------------------------------------->
+                        <div class="__ro-item  pd-bottom-6 " ng-repeat="x in listData">
+
+                            <div ng-if="$index==0">
+                                <div class="__title pd-top-8 pd-bottom-6 upper-case">
+                                    {{x.name}}
+                                </div>
+                                <div class="__text">
+                                    {{x.comment}}
+                                </div>
+                                <div class="__seperator-testimonial pd-top-5 ">
+                                </div>
+                            </div>
+
+                            <div ng-if="$index<=listData.length-2 && $index>0">
+                                <div class="__title pd-bottom-4 upper-case">
+                                    {{x.name}}
+                                </div>
+                                <div class="__text">
+                                    {{x.comment}}
+                                </div>
+                                <div class="__seperator-testimonial pd-top-5">
+                                </div>
+                            </div>
+
+                            <div ng-if="$index>=listData.length-1">
+                                <div class="__title pd-bottom-4 upper-case">
+                                    {{x.name}}
+                                </div>
+                                <div class="__text pd-bottom-8">
+                                    {{x.comment}}
+                                </div>
+                            </div>
+
+                        </div>
+                        <!------------------------------------------>
+                    </div>
+                </div>
+            </div>
+            <!----------------------------->
+            <!---img------>
+            <div class="col-md-4 col-xs-12 hidden-xs center-block">
+                <div class="__image cell-vertical-wrapper">
+                    <div class="cell-vertical-bottom">
+                        <img src="assets/images/testimonial.jpg" alt="testimonial" class="img-responsive text-center" >
+                    </div>
+                </div>
+            </div>
+            <!---------->
+        </div>
+    </div>
+</div>

@@ -1,0 +1,35 @@
+<div class="container aqua-blogpot-container">
+    <div class="row aqua-blogpot-style-1" ng-repeat="x in listData"  >
+            <div class="col-xs-12">
+                <a href="#!blog-article1"><div class="__title mgb-50  capitalize">
+                    {{x.title}}
+                </div></a>
+            </div>
+            <div class="col-xs-12" >
+                <div class="__image mgb-45">
+                    <img src="{{x.img}}" alt="" class="img-responsive">
+
+                    <div class="__note __hidden  italic"  ng-if="$index!=1" ng-show="hiddenclick">
+                        <span class="__close" ng-click="hiddenclick=!hiddenclick"></span>
+                        <p > {{x.note[0]}}<br><br>
+                            <span style="font-size:16px;overflow: hidden;">  {{x.note[1]}}</span>
+                        </p>
+                        <a href="#"><span><i class="__next"></i></span></a>
+                    </div>
+                </div>
+
+                <div class="__description">
+                    {{x.content}}
+                </div>
+
+                <div class="__infor text-right mgb-60 ">
+                        Posted:<a  href="#"> <span class="__time color-main1 mgr-50 hover-color-gray-4 ">{{x.time}} </span></a>
+                    By <a href="#"><span class="__author color-main1 mgr-50 hover-color-gray-4"> {{x.author}}</span></a>
+                    Comment: <a href="#"><span class="__number color-main1 hover-color-gray-4"> {{x.number}}</span></a>
+                </div>
+            </div>
+        <div class="col-xs-12  ">
+            <hr>
+        </div>
+    </div>
+</div>

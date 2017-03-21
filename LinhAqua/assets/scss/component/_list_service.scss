@@ -1,0 +1,49 @@
+.list-service-container-1
+{
+    padding-top:80px;
+    padding-bottom:60px;
+    background-color:#E7E6E1;
+    margin-bottom: 50px;
+    .__image
+    {
+      max-width:470px;
+      margin-left:auto;
+      margin-right:auto;
+      img
+      {
+        width:100%;
+        margin-bottom: 35px;
+      }
+    }
+  .__title
+  {
+    font-family:$color-main4;
+    font-weight:400;
+    font-size:24px;
+    leter-spacing:2px;
+    word-spacing:2px;
+    margin-left:20px;
+    &:after
+    {
+      content: ' ';
+      display: block;
+      width:30px;
+      border-top:1px solid;
+      margin-left:auto;
+      margin-right:auto;
+    }
+  }
+  .__text
+  {
+    line-height:46px;
+  }
+  li {
+    list-style-type: disc;
+  }
+  @media (max-width: 480px) {
+    .__text
+    {
+      padding-left: 0;
+    }
+  }
+}

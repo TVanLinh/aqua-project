@@ -1,0 +1,36 @@
+<div class="container" >
+    <div class="row aqua-team-container">
+        <div class="col-lg-12">
+            <div class="aqua-heading">
+                <div class="__aqua-heading-title">
+                    OUR TEAM
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4  col-xs-12 text-center" ng-repeat="x in listData">
+            <div class="aqua-team aqua-team-style1">
+                <div class="__image">
+                    <img src="{{x.img[0]}}" class="img-responsive">
+                </div>
+                <div class="__content ">
+                    <p class="__name upper-case">
+                        {{x.name}}
+                    </p>
+                    <p class="__role italic color-main1">
+                        {{x.job}}
+                    </p>
+                    <p class="__text"  ng-bind-html="x.description"/>
+                    <!--p class="__text" >
+                            {{x.description | newlines }}
+                    </p-->
+                    <ul class="__social ">
+                        <li><a href="#"><i class="icon-facebook"></i></a></li>
+                        <li><a href="#"><i class="icon-twitter"></i></a></li>
+                        <li><a href="#"><i class="icon-gplus"></i></a></li>
+                        <li><a href="#"><i class="icon-stumbleupon"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

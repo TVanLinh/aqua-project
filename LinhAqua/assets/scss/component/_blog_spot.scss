@@ -1,0 +1,110 @@
+.aqua-blogpot-container
+{
+
+    .aqua-blogpot-style-1,aqua-blogpot-style-2
+  {
+      .__title
+      {
+        font-size:36px;
+        font-weight:700;
+        font-family:$ff-main2;;
+      }
+    .__image
+      {
+        position: relative;
+      }
+      .__note
+      {
+          position: absolute;
+          top:35px;
+          left:35px;
+          width:240px;
+          overflow: hidden;
+          padding:15px;
+          font-family: $ff-main2,$ff-main3;;
+          font-size:18px;
+          border: 1px solid $color-gray-a;
+          background-color: rgba(255, 255, 255, 0.7);
+          font-weight:700;
+          line-height:25px;
+          //min-height:2;
+      }
+      img
+      {
+        max-width:100%;
+        height:auto;
+       // height:100%;
+        margin-left:auto;
+        margin-right:auto;
+        //display: block;
+      }
+    .__close,.__next
+    {
+      position: absolute;
+      right:10px;
+      font-size: 18px;
+      line-height: 18px;
+      &:after
+      {
+        content: "\e0c8";
+        font-family:"aqua icon" !important;
+        font-weight:400;
+      }
+    }
+    .__close
+    {
+      &:hover
+      {
+          cursor:pointer
+      }
+    }
+    .__next
+    {
+      bottom:10px;
+      &:after
+      {
+        content: "\e36a";
+      }
+    }
+    p{
+      font-size: 18px;
+      margin: 12px 10px;
+      line-height: 25px;
+    }
+  }
+  .__time,.__author,.__number
+  {
+      @include easing-animation();
+  }
+  .col-xs-12
+  {
+    //padding-left:0px;
+    //padding-right:0px;
+  }
+}
+@media (max-width:479px)
+{
+   .__hidden
+   {
+     display: none;
+   }
+}
+@media (max-width:767px)
+{
+  .aqua-blogpot-container .aqua-blogpot-style-1 p {
+    height: 100px;
+    font-size:18px;
+  }
+   .aqua-blogpot-container  .aqua-blogpot-style-1 .__title
+  {
+    font-size:28px;
+  }
+  .aqua-blogpot-style-1 
+  {
+    .__infor
+    {
+      text-align: left;
+    }
+  }
+  
+}

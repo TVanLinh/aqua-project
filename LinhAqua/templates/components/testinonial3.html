@@ -1,0 +1,27 @@
+<div class="bgc-main1">
+    <div class="container ">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
+                <div class="aqua-testimonial-container-3 pdt-80">
+                    <div class="regularTestimonial slider ">
+                        <div class="row " ng-repeat="x in listData"  aqua-slider='{"dots":false,"fade":false}'>
+                        <div class="col-md-3 col-md-push-9">
+                            <div class="__image pdb-30">
+                                <img src="assets/images/testimonial-1.jpg" alt="" class="img-circle">
+                            </div>
+                        </div>
+                        <div class="col-md-9 col-md-pull-3">
+                            <div class="ro-image text-center">
+                                <div class="ro-content text-center">
+                                    <p class="__comment"> {{x.comment}}</p>
+                                    <p class="__name text-right capitalize" > {{x.name}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

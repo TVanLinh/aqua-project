@@ -1,0 +1,53 @@
+<!--<div class="overlay-wraper pdb-30 aqua-slider-style3">-->
+    <!--<div class=" mgb-30">-->
+        <!--<div class="">-->
+            <!--<div class="silder">-->
+                <!--<section class=" ">-->
+                    <!--<div  ng-repeat="x in listData"  aqua-slider='{"dots":false,"speed":500,"fade":false}'>-->
+                        <!--<div    class=" bgc-main2 item" style="background-image: url({{x.img}});" ng-if="$odd">-->
+                        <!--</div>-->
+                        <!--<div    class="bgc-main3 item" style="background-image: url({{x.img}});" ng-if="$even">-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</section>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="ro-overlay table-cell-wrapper ">-->
+        <!--<div class="cell-middle">-->
+            <!--<img src="assets/images/fw-slider-brand.png" alt="" class="__image">-->
+            <!--<p>a good reminder.<br>-->
+                <!--we live in a culture that values stress,like it makes us better or something.-->
+            <!--</p>-->
+            <!--<a href="#" class="button-border  hover-bgc-main1 hover-border-c-main1 hover-color-light upper-case">-->
+                <!--see more-->
+            <!--</a>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+<div class="silder aqua-slider-style3">
+    <section class=" "   ng-repeat="x in listData"  aqua-slider='{"dots":false,"speed":500,"fade":false}'>
+        <div class="overlay-wraper pdb-30 ">
+            <div class=" mgb-30">
+                <div class="">
+                    <div    class=" bgc-main2 item" style="background-image: url({{x.img}});" ng-if="$odd">
+                    </div>
+                    <div    class="bgc-main3 item" style="background-image: url({{x.img}});" ng-if="$even">
+                    </div>
+                </div>
+                <div class="ro-overlay table-cell-wrapper ">
+                    <div class="cell-middle">
+                        <img src="assets/images/fw-slider-brand.png" alt="" class="__image">
+                        <p>a good reminder.<br>
+                            we live in a culture that values stress,like it makes us better or something.
+                        </p>
+                        <a href="#" class="button-border  hover-bgc-main1 hover-border-c-main1 hover-color-light upper-case">
+                            see more
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

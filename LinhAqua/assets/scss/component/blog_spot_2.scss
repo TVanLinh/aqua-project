@@ -1,0 +1,136 @@
+.aqua-blogpot-style-3,.aqua-blogpot-style-4
+{
+  .ro-slidebar
+  {
+      max-width:200px;
+      float:right;
+  }
+    .ro-first-letter
+    {
+       font-weight:500;
+        font-size:36px;
+       font-family:$ff-main4;
+    }
+  .__author
+  {
+      font-size:20px;
+  }
+  a
+  {
+     @include easing-animation();
+    color:$color-main1;
+    &:hover
+     {
+       color:$color-gray-a;
+     }
+  }
+  .__title
+  {
+    font-size:36px;
+    font-weight:700;
+    font-family:$ff-main2;
+  }
+   .__write
+  {
+    position: absolute;
+    right:10px;
+     &:after
+     {
+        @include easing-animation;
+         content: "\e0c7";
+         background-color: $color-light-e;
+        font-family:"aqua icon";
+         height:33px;
+         width:33px;
+         line-height:33px;
+          color:$color-gray-4;
+         border:1px solid $color-gray-a;
+         padding:5px;
+        font-size:24px;
+     }
+  }
+  .__write:hover:after
+  {
+      background-color: $color-main1;
+      border-color:$color-main1 ;
+      color:$color-light;
+  }
+  .__ro-right
+  {
+      margin-left: 42px;
+      padding: 0px 10px;
+  }
+  .__ro-left
+  {
+     float: left;
+     margin-left: -41px;
+  }
+  .__name
+  {
+    font-size: 18px;
+    font-weight: 400;
+    font-family:$ff-main4;
+    transform: translateY(-7px);
+  }
+  .__time .__write
+  {
+
+      &:after
+      {
+        background-color: white;
+        border:none;
+      }
+      &:hover:after
+      {
+          background-color: transparent;
+          color:$color-main1;
+      }
+  }
+  .form-comment
+  {
+     input,textarea
+     {
+        width:100%;
+        padding:5px;
+        color:$color-gray-4;
+       font-weight:700;
+     }
+    textarea
+    {
+        height:115px;
+        resize: none;
+    }
+  }
+
+  .__blog-image
+  {
+    overflow: hidden;
+    img
+    {
+      @include easing-animation();
+      width:100%;
+      margin-left:auto;
+      margin-right:auto;
+      overflow: hidden;
+      &:hover
+      {
+        opacity:0.7;
+      }
+    }
+  }
+  @media(max-width: 480px)
+  {
+    .__time
+    {
+      text-align: left;
+    }
+  }
+  @media(max-width:991px)
+  {
+    .btn-send
+    {
+      text-align: center;;
+    }
+  }
+}
+

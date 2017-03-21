@@ -1,0 +1,73 @@
+.aqua-team-container
+{
+    .aqua-team
+    {
+        &.aqua-team-style1
+        {
+            margin-bottom:60px;
+            .__image
+            {
+                margin-bottom:25px;
+                display: inline-block;
+            }
+        }
+        .__image
+        {
+            max-width:400px;
+            @include easing-animation();
+        }
+        .__name
+        {
+            font-weight:400;
+            font-family:$ff-main4;
+        }
+        .__role
+        {
+
+        }
+        .__text
+        {
+            margin-bottom:15px;
+        }
+        .__social
+        {
+            li
+            {
+                display:inline-block;
+                padding-left:3px;
+                pdding-right:3px;
+                font-size:18px;
+               a
+               {
+                   color:$color-text;
+                   @include easing-animation();
+                   &:hover
+                   {
+                        color:$color-main1;
+
+                   }
+               }
+
+            }
+            padding-left:0px;
+        }
+        &.aqua-team-style2{
+            .__image{
+                transform:scale(0.97);
+                margin-left:auto;
+                margin-right:auto;
+                opacity:0.9;
+                transform-origin: 50% 100%;
+                &:hover{
+                    transform:scale(1);
+                    opacity:1;
+                }
+            }
+            .__name
+            {
+                padding-top:50px;
+            }
+        }
+
+    }
+}

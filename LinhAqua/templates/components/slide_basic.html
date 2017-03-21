@@ -1,0 +1,161 @@
+<!--<div class="aqua-slider-style4">-->
+    <!--<div class="container-fluid " style="background-color: #E7E6E1;">-->
+        <!--<div class="row item1 clearfix"  style="background-image: url(assets/images/slider1.png);">-->
+            <!--<div class="col-sm-6 col-sm-offset-5">-->
+                <!--<div class="table-cell-wrapper">-->
+                    <!--<div class="cell-middle">-->
+                        <!--<img src="" alt="">-->
+                        <!--<p>a good reminder. <span class="upper-case __aqua-note mgl-50">Aqua </span> <span class=" color-main1 ">spa</span><br>-->
+                            <!--we live in a culture that values stress,like it makes us better or something.-->
+                        <!--</p>-->
+                        <!--<a href="#"><div class="button-border color-gray-4 upper-case border-color-gray-4 hover-bgc-main1 hover-border-c-main1 hover-color-light">-->
+                            <!--See more-->
+                        <!--</div></a>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+<!--<div class="aqua-slider-style4">-->
+    <!--<div class="container-fluid bgc-main3">-->
+        <!--<div class="row item2 clearfix"  style="background-image: url(assets/images/slider5.png);">-->
+            <!--<div class="col-sm-6 col-sm-offset-5">-->
+                <!--<div class="table-cell-wrapper">-->
+                    <!--<div class="cell-middle">-->
+                        <!--<span class="upper-case __aqua-note">Aqua </span> <span class=" color-light ">spa</span>-->
+                        <!--<p>One rarely falls in love without being as much attracted to<br>-->
+                            <!--what is interestingly wrong with someone as what is objectively healthy.-->
+                        <!--</p>-->
+                        <!--<a href="#"><div class="button-border color-gray-4 upper-case border-color-gray-4 hover-bgc-main1 hover-border-c-main1 hover-color-light">-->
+                            <!--See more-->
+                        <!--</div></a>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+<!--<div class="aqua-slider-style4" >-->
+    <!--<div class="container-fluid bgc-main3" style="background-color: #E7E6E1;">-->
+        <!--<div class="row item3 clearfix"  style="background-image: url(assets/images/slider4.png);">-->
+            <!--<div class="col-sm-6 col-sm-offset-1">-->
+                <!--<div class="table-cell-wrapper">-->
+                    <!--<div class="cell-middle text-right">-->
+                        <!--<span class="upper-case __aqua-note">Aqua </span> <span class=" color-main1 ">spa</span>-->
+                        <!--<p>Youth is happy because it has the capacity to see beauty.<br>-->
+                            <!--Anyone who keeps the ability to see beauty never grows old.-->
+                        <!--</p>-->
+                        <!--<a href="#"><div class="button-border color-gray-4 upper-case border-color-gray-4 hover-bgc-main1 hover-border-c-main1 hover-color-light">-->
+                            <!--See more-->
+                        <!--</div></a>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+<!--<div class="aqua-slider-style4" >-->
+    <!--<div class="container-fluid bgc-main3" >-->
+        <!--<div class="row item4 clearfix"  style="background-image: url(assets/images/slider3.png);">-->
+            <!--<div class="col-sm-6 col-sm-offset-5">-->
+                <!--<div class="table-cell-wrapper">-->
+                    <!--<div class="cell-top text-left">-->
+                        <!--<p>a good reminder. <span class="upper-case __aqua-note mgl-50">Aqua </span> <span class=" color-main1 ">spa</span><br>-->
+                        <!--we live in a culture that values stress,like it makes us better or something.-->
+                        <!--</p>-->
+                        <!--<a href="#" class="text-center"><div class="button-border color-gray-4 upper-case border-color-gray-4 hover-bgc-main1 hover-border-c-main1 hover-color-light">-->
+                        <!--See more-->
+                        <!--</div></a>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+
+<div class="aqua-slider-style4">
+    <div class="silder">
+        <section>
+                 <div  ng-repeat="x in listData" aqua-slider='{"dots":false,"speed":500,"fade":true}'>
+            <!--------------------->
+                    <div class="container-fluid " style="background-color: #E7E6E1;" ng-if="$index==0">
+                        <div class="row item1 clearfix"  style="background-image: url({{x.img}});">
+                            <div class="col-sm-6 col-sm-offset-5">
+                                <div class="table-cell-wrapper">
+                                    <div class="cell-middle">
+                                        <img src="" alt="">
+                                        <p>a good reminder. <span class="upper-case __aqua-note mgl-50">Aqua </span> <span class=" color-main1 ">spa</span><br>
+                                            we live in a culture that values stress,like it makes us better or something.
+                                        </p>
+                                        <a href="#"><div class="button-border color-gray-4 upper-case border-color-gray-4 hover-bgc-main1 hover-border-c-main1 hover-color-light">
+                                            See more
+                                        </div></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--------------------------->
+                    <div class="container-fluid bgc-main3"  ng-if="$index==1">
+                        <div class="row item2 clearfix"  style="background-image: url({{x.img}});">
+                            <div class="col-sm-6 col-sm-offset-5">
+                                <div class="table-cell-wrapper">
+                                    <div class="cell-middle">
+                                        <span class="upper-case __aqua-note">Aqua </span> <span class=" color-light ">spa</span>
+                                        <p>One rarely falls in love without being as much attracted to<br>
+                                            what is interestingly wrong with someone as what is objectively healthy.
+                                        </p>
+                                        <a href="#"><div class="button-border color-gray-4 upper-case border-color-gray-4 hover-bgc-main1 hover-border-c-main1 hover-color-light">
+                                            See more
+                                        </div></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--------------------------------->
+                    <div class="container-fluid bgc-main4"   ng-if="$index==2">
+                        <div class="row item3 clearfix"  style="background-image: url(assets/images/slider4.png);">
+                            <div class="col-sm-6 col-sm-offset-1">
+                                <div class="table-cell-wrapper">
+                                    <div class="cell-middle text-right">
+                                        <span class="upper-case __aqua-note">Aqua </span> <span class=" color-main1 ">spa</span>
+                                        <p>Youth is happy because it has the capacity to see beauty.<br>
+                                            Anyone who keeps the ability to see beauty never grows old.
+                                        </p>
+                                        <a href="#"><div class="button-border color-gray-4 upper-case border-color-gray-4 hover-bgc-main1 hover-border-c-main1 hover-color-light">
+                                            See more
+                                        </div></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!------------------------------------------->
+                    <div class="container-fluid bgc-main3" >
+                        <div class="row item4 clearfix"  style="background-image: url({{x.img}});"  ng-if="$index==3">
+                            <div class="col-sm-6 col-sm-offset-5">
+                                <div class="table-cell-wrapper">
+                                    <div class="cell-top text-left">
+                                        <p>a good reminder. <span class="upper-case __aqua-note mgl-50">Aqua </span> <span class=" color-main1 ">spa</span><br>
+                                            we live in a culture that values stress,like it makes us better or something.
+                                        </p>
+                                        <a href="#" class="text-center"><div class="button-border color-gray-4 upper-case border-color-gray-4 hover-bgc-main1 hover-border-c-main1 hover-color-light">
+                                            See more
+                                        </div></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+        </section>
+    </div>
+</div>
+
+

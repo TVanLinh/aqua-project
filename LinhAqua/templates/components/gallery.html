@@ -1,0 +1,53 @@
+<!--<div class="container-fluid">-->
+        <!--<div class="row">-->
+            <!--<div class="aqua-gallery-container">-->
+                <!--<section class="regular slider init-slick">-->
+                    <!--<div class="">-->
+                        <!--<a  href="#"><img class="ro-item" src="assets/images/space1.jpg"></a>-->
+                    <!--</div>-->
+                    <!--<div class="">-->
+                        <!--<a  href="#"> <img class="ro-item" src="assets/images/space2.jpg"></a>-->
+                    <!--</div>-->
+                    <!--<div class="">-->
+                        <!--<a href="#"><img class="ro-item" src="assets/images/space3.jpg"></a>-->
+                    <!--</div>-->
+                    <!--<div class="">-->
+                        <!--<a href="#"><img class="ro-item" src="assets/images/space4.jpg"></a>-->
+                    <!--</div>-->
+                    <!--<div class="">-->
+                        <!--<a href="#"><img class="ro-item" src="assets/images/space5.jpg"></a>-->
+                    <!--</div>-->
+                    <!--<div class="">-->
+                        <!--<a href="#"><img class="ro-item" src="assets/images/space6.jpg"></a>-->
+                    <!--</div>-->
+                    <!--<div class="">-->
+                        <!--<a href="#"><img class="ro-item" src="assets/images/space7.jpg"></a>-->
+                    <!--</div>-->
+                    <!--<div class="">-->
+                        <!--<a href="#"><img class="ro-item" src="assets/images/space8.jpg"></a>-->
+                    <!--</div>-->
+                    <!--<div class="">-->
+                        <!--<a href="#"><img class="ro-item" src="assets/images/space6.jpg"></a>-->
+                    <!--</div>-->
+                    <!--<div >-->
+                        <!--<a href="#"></a><img class="ro-item" src="assets/images/space7.jpg"></a>-->
+                    <!--</div>-->
+                    <!--<div class="">-->
+                        <!--<a href="#"><img class="ro-item"  src="assets/images/space8.jpg"></a>-->
+                    <!--</div>-->
+                <!--</section>-->
+            <!--</div>-->
+        <!--</div>-->
+<!--</div>-->
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="aqua-gallery-container">
+            <section class="regular slider init-slick">
+                <div ng-repeat="x in listData" aqua-gallery>
+                    <a  href="#"><img class="ro-item" src="{{x.img}}" alt="{{x.alt}}"></a>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>

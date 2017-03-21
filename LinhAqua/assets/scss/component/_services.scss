@@ -1,0 +1,484 @@
+.aqua-service-main-1 {
+    color: $color-light;
+    font-size: 24px;
+    line-height: 1.2;
+    font-family: $ff-main2;
+    font-weight: 400;
+    .aqua-hidden-xs {
+      @media (max-width: 767px) {
+        display: none;
+        height: 400px;
+        text-align: center;
+      }
+    }
+    .__content
+    {
+      .__text
+      {
+        margin-top: 130px;
+        margin-bottom:50px;
+        @media (max-width: 991px) {
+          margin-top: 60px;
+          margin-bottom: 60px;
+        }
+      }
+      @media (max-width: 767px)
+      {
+        text-align: center;
+      }
+      .btn-buy{
+        @media (max-width: 991px)
+        {
+           margin-bottom: 50px;
+        }
+      }
+    }
+  }
+//service in page update
+.service-update2
+{
+  .aqua-service-main-1
+  {
+     color:$color-gray-4;
+    font-weight:600;
+     .btn-buy
+     {
+       border:1px solid;
+     }
+  }
+}
+//-------------------------
+//----service-------4----------5-----------------------------------------
+.aqua-service-main-2
+{
+  .__image
+  {
+      img{
+        display: inline-block;
+      }
+     padding-bottom:10px;
+  }
+  .__title
+  {
+     font-size:14px;
+     font-family:$ff-main4;
+      @include easing-animation();
+      &:after{
+         content:' ';
+         display:block;
+          width:0px;
+          margin-left:auto;
+          margin-right:auto;
+          margin-top:5px;
+          margin-bottom:10px;
+          border-top:1px solid ;
+          border-color:$color-gray-4;
+          @include easing-animation();
+          font-size:0px;
+      }
+  }
+  &:hover
+  {
+    .__title
+    {
+        &:after
+        {
+            width:30px;
+        }
+    }
+  }
+  .__desciption{
+    margin-bottom:20px;
+    max-width:400px;
+  }
+}
+
+//-------------------------------
+.service-item-style-2,.service-item-style-3{
+  max-width:370px;
+  padding-bottom:30px;
+  margin-top:30px;
+  margin-left:auto;
+  margin-right:auto;
+
+  .__image{
+    padding-bottom:20px;
+    max-width:370px;
+  }
+  .__content
+  {
+        padding-bottom:20px;
+        .__title
+        {
+          font-size:14px;
+          @include easing-animation();
+          font-family:$ff-main4;
+        }
+  }
+    h4
+    {
+      @include easing-animation();
+    }
+  .__seperator
+  {
+    padding-bottom: 10px;
+    &:after
+    {
+      @include easing-animation();
+      content: '';
+      display: block;
+      width: 0px;
+      border-top: 1px solid;
+      margin-right: auto;
+      margin-left: auto;
+     // padding-bottom:10px;
+    }
+  }
+  &:hover
+  {
+      .__title
+      {
+        color: $color-main1;;
+      }
+      .__seperator:after
+      {
+          width:50px;
+         border-color: $color-main1;;
+      }
+  }
+
+}
+.service-item-style-3:hover
+{
+    .__title,.__seperator
+    {
+       color:$color-main1;
+    }
+}
+///---------------------------------------
+///-------------servoce--12------------------------
+.ro-service-1,.ro-service-2,.ro-service-3
+{
+    margin-bottom:30px;
+    .__aqua-heading-title
+    {
+      font-family:$ff-main2;
+      font-weight:700;
+   }
+      .__more
+    {
+      text-align: right;
+      &:before {
+        content: "d";
+        color: $color-gray-a;
+        font-size: 14px;
+        font-family: "aqua icon" !important;
+        outline: none;
+      }
+    }
+}
+.ro-service-1
+{
+      .__service-1-left
+      {
+
+      }
+      .__service-1-right
+      {
+            position: absolute;
+            top: 20px;
+            left: 53%;
+            width: 45%;
+            .__content
+            {
+                background-color: rgba(198, 217, 198, 0.7);
+                padding:35px 20px 15px 20px;
+                line-height:1.8;
+                .__more
+                {
+                    text-align: right;
+                    &:before {
+                      content: "d";
+                      color: $color-gray-a;
+                      font-size: 14px;
+                      font-family: "aqua icon" !important;
+                      outline: none;
+                    }
+                }
+            }
+
+      }
+  @media(max-width: 991px)
+  {
+    top: 20px;
+    width: 60%;
+  }
+  @media(max-width: 767px)
+  {
+    top: 20px;
+    width: 100%;
+    .__service-1-right
+    {
+      left: 30%;
+      width: 67%;
+    }
+  }
+  @media (max-width:480px)
+  {
+    .__service-1-right
+    {
+        position: relative;
+        width:100%;
+      left:0;
+    }
+
+    .__service-1-left
+    {
+        display: none;
+    }
+  }
+  @media(min-width:481)
+  {
+      .__service-1-right
+      {
+         left:40%;
+         width:100%;
+      }
+  }
+}
+
+
+
+.ro-service-2
+{
+    .__service-2-left
+    {
+        padding:5px;
+        position:relative;
+        z-index:2;
+        top: 69px;
+        width: 50%;
+        .__content
+        {
+            background-color: rgba(198, 217, 198, 0.7);
+            padding:30px 30px 10px 30px;
+            line-height:1.8;
+            .__next
+            {
+            text-align: right;
+            &:before {
+              content: "d";
+              color: $color-gray-a;
+              font-size: 14px;
+              font-family: "aqua icon" !important;
+              outline: none;
+            }
+           }
+        }
+    }
+
+    .__service-2-right
+    {
+        position:absolute;
+        right:3%;
+        top:55%;
+       img{
+        // float:right;
+       }
+    }
+  @media (max-width:992px)
+  {
+    .__service-2-left
+    {
+      position: relative;
+      width:50%;
+      top:40px;
+    }
+  }
+  @media (max-width:767px)
+  {
+    margin-top: 90px;
+    .__service-2-left
+    {
+      position: relative;
+      width:70%;
+      top:0px;
+
+    }
+  }
+  @media (max-width:480px)
+  {
+       margin-top:-90px;
+    .__service-2-left
+    {
+      position: relative;
+      width:100%;
+      top:50px;
+      .__aqua-heading-title
+      {
+        position: relative;
+        top: 60px;
+        z-index: 5;
+        padding-bottom:30px;
+
+      }
+      .__content
+      {
+        z-index: 5;
+        width: 100%;
+        top: 30px;
+        position: relative;
+      }
+    }
+
+    .__service-2-right
+    {
+      display: none;
+
+    }
+  }
+
+}
+//---------------------
+.ro-service-3
+{
+     margin-top:180px;
+    .__service-3-left
+    {
+        margin-bottom:20px;
+    }
+  .__service-3-right {
+    .__title
+    {
+        text-align: center;
+      .aqua-heading
+      {
+            margin-left:20px;
+            text-align: left;
+            .__aqua-heading-title:after
+            {
+               margin-left:28px;
+               text-align:center;
+            }
+        }
+    }
+    .__content
+        {
+          position: relative;
+          top: -168px;
+          left: 132px;
+          background-color: rgba(231, 230, 225, 0.7);
+          width: 70%;
+          padding: 30px;
+          padding-bottom: 10px;
+    }
+  }
+  @media(max-width: 1199px)
+  {
+    margin-bottom:-230px;
+    .__service-3-right
+    {
+      position: relative;
+      top:-400px;
+      left:50%;
+      width:50%;
+      .__title {
+        position: relative;
+        .aqua-heading {
+          margin-left: 0px;
+          text-align: center;
+          .__aqua-heading-title:after {
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+      }
+      .__content
+      {
+        position: relative;
+        top: 5px;
+        left: 0px;
+        width: 100%;
+        padding: 30px;
+        padding-bottom: 10px;
+      }
+
+    }
+  }
+  @media(max-width: 992px)
+  {
+    margin-top:90px;
+    margin-bottom:-300px;
+  }
+  @media(max-width:767px) {
+    margin-top: 90px;
+    margin-bottom:-250px;
+    .__service-3-right
+    {
+      position: relative;
+      top:-400px;
+      left:30%;
+      width:70%;
+      .__title {
+        position: relative;
+        .aqua-heading {
+          margin-left: 0px;
+          text-align: center;
+          .__aqua-heading-title:after {
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+      }
+      .__content
+      {
+        position: relative;
+        top: 5px;
+        left: 0px;
+        width: 100%;
+        padding: 30px;
+        padding-bottom: 10px;
+      }
+
+    }
+  }
+   @media(max-width:480px)
+   {
+     margin-bottom:50px;
+        .__service-3-left
+        {
+            display: none;
+        }
+     .__service-3-right
+     {
+       top:0px;
+       left:0;
+       width:100%;
+       .__title
+       {
+         //  text-align: center;
+         //  top: -160px;
+           position: relative;
+           .aqua-heading
+           {
+             margin-left:0px;
+             text-align: center;
+             .__aqua-heading-title:after
+             {
+               margin-left:auto;
+               margin-right:auto;
+             }
+           }
+       }
+         .__content
+         {
+           position: relative;
+           width:100%;
+           left: 0px;
+         }
+     }
+
+   }
+
+}
+//-----------------------------------

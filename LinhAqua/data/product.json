@@ -1,0 +1,32 @@
+[
+  {
+    "name":"BATH SALT",
+    "price":"150$",
+    "img":"assets/images/shopn1.jpg"
+  },
+  {
+    "name":"BATH SALT",
+    "price":"150$",
+    "img":"assets/images/shopn2.jpg"
+  },
+  {
+    "name":"BATH SALT",
+    "price":"150$",
+    "img":"assets/images/shopn3.jpg"
+  },
+  {
+    "name":"BATH SALT",
+    "price":"150$",
+    "img":"assets/images/shopn4.jpg"
+  },
+  {
+    "name":"BATH SALT",
+    "price":"150$",
+    "img":"assets/images/shopn5.jpg"
+  },
+  {
+    "name": "BATH SALT",
+    "price": "150$",
+    "img": "assets/images/shopn6.jpg"
+  }
+]

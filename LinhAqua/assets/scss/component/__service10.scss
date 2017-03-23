@@ -14,7 +14,7 @@
     font-weight:400;
     word-spacing:2px;
     cursor: pointer;
-    margin-bottom:25px;
+   // margin-bottom:25px;
     padding-top: 0;
     line-height: 30px;
     &:before
@@ -75,6 +75,14 @@
         padding-left:15px;
       }
     }
+  }
+  h3[aria-selected="false"]
+  {
+    margin-bottom:25px;
+  }
+  h3[aria-selected="false"]+.item
+  {
+    margin-top:-25px;
   }
 }
 #accordion
@@ -139,4 +147,8 @@ h3[aria-selected="true"]
   {
     background-color:$color-light;
   }
+}
+.place-holder-service
+{
+  height:25px;
 }

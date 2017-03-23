@@ -89,6 +89,13 @@
      display: none;
    }
 }
+.__lood-more
+{
+  line-height: 100px;
+  font-family: $ff-main2;
+  font-weight:600;
+  font-size:18px;
+}
 @media (max-width:767px)
 {
   .aqua-blogpot-container .aqua-blogpot-style-1 p {
@@ -106,5 +113,8 @@
       text-align: left;
     }
   }
-  
+  .__lood-more
+  {
+    line-height:80px;
+  }
 }

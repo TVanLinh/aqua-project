@@ -1,48 +1,5 @@
 <div class="container">
     <div class="row aqua-pricing-table-container">
-          <!--div class="col-md-3 col-sm-6 col-xs-12 center-block ">
-                    <div class="aqua-pricing-table">
-                        <div class="__title upper-case text-center ">
-                                <h4>STandard</h4>
-                        </div>
-
-                        <div class="over_lay_wraper " >
-                            <div class="__image">
-                                <img src="assets/images/membership1.jpg" alt="">
-                            </div>
-                            <div class="__over_lay ">
-                                <div class="cell-vertical-wrapper">
-                                    <div class="cell-vertical-middle __over-lay-content">
-                                        $<span class="__price">59</span>
-                                        <p class="">monthly</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="__content text-center margin-top-5">
-                            <div class="__item">
-                                    Full Body Massage
-                            </div>
-                            <div class="__item">
-                                Full Body Massage
-                            </div>
-                            <div class="__item">
-                                Full Body Massage
-                            </div>
-                            <div class="__item">
-                                Full Body Massage
-                            </div>
-                            <div class="__item">
-                                Full Body Massage
-                            </div>
-                            <div class="__item">
-                                Full Body Massage
-                            </div>
-                            <div class="button-border upper-case hover-bgc-main1 hover-border-c-main1 hover-color-light margin-top-8 margin-bottom-8" >buy now</div>
-                        </div>
-                </div>
-            </div-->
         <div class="col-md-3 col-sm-6 col-xs-12  center-block" ng-repeat="x in listData">
             <div class="aqua-pricing-table">
                 <div class="__title upper-case text-center ">
@@ -65,13 +22,13 @@
 
                 <div class="__content text-center margin-top-5" ng-repeat="item in x.list">
                     <div ng-if="$index==0" class="__item pd-top-3">
-                        {{item}}
+                        <div>{{item}}</div>
                     </div>
-                    <div ng-if="$index==x.list.length-1">
-                        {{item}}
+                    <div ng-if="$index==x.list.length-1 ">
+                        <div class="mgt--15">{{item}}</div>
                     </div>
-                    <div ng-if="$index!=x.list.length-1 && $index!=0" class="__item">
-                        {{item}}
+                    <div ng-if="$index!=x.list.length-1 && $index!=0" class="__item ">
+                        <div class="mgt--15">{{item}}</div>
                     </div>
                 </div>
                 <div class="text-center">

@@ -140,4 +140,22 @@
       padding-top:15px;
     }
   }
+  @media (min-width: 1400px) {
+    .__content
+    {
+      padding-top:10%;
+    }
+  }
+  @media (min-width: 1920px) {
+    .__content
+    {
+      padding-top:30%;
+    }
+  }
+  @media (min-width: 2000px) {
+    .__content
+    {
+      padding-top:18%;
+    }
+  }
 }

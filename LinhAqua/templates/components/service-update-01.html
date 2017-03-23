@@ -1,19 +1,53 @@
-<!--<div class="container-fluid list-service-container-3">-->
+
+
+<div class="container-fluid list-service-container-2 list-service-container-3 ">
+    <div class="row">
+        <div class="col-md-6 col-xs-12 pdl-0 pdr-0">
+            <div class="__image" style="background-image: url({{listData[2].img}})">
+                <!--<img src="{{listData[1].img}}" alt="">-->
+            </div>
+        </div>
+        <div class="col-md-5 mgl-40 mgl-xs-0  ">
+                <div class="__content ">
+                    <div class="__title upper-case pd-bottom-5 margin-top-8">
+                        {{listData[1].title}}
+                    </div>
+                    <div class="__list-infor scroll">
+                        <ul>
+                            <li ng-repeat="x in listData[0].content">
+                                {{x}}
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="#"><div class="button-default bgc-gray-4 color-light hover-bgc-main1 upper-case float-right __see-more">
+                        see more
+                    </div></a>
+                </div>
+
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+
+
+<!--<div class="container-fluid list-service-container-4">-->
     <!--<div class="row">-->
-        <!--<div>-->
-            <!--<div class="col-md-6">-->
-                <!--<div class="__image">-->
-                    <!--<img src="{{listData[2].img}}" alt="">-->
-                <!--</div>-->
+        <!--<div class="col-md-6 col-xs-12 pdl-0 pdr-0">-->
+            <!--<div class="__image" >-->
+                <!--<img src="{{listData[2].img}}" class="img-responsive" alt="">-->
             <!--</div>-->
-            <!--<div class="col-md-5">-->
-                <!--<div class="__content mgl-20 pbt-30">-->
+        <!--</div>-->
+        <!--<div class="col-md-5 mgl-40 mgl-xs-0  ">-->
+            <!--<div class="table-cell-wrapper">-->
+                <!--<div class="__content cell-middle">-->
                     <!--<div class="__title upper-case pd-bottom-5 margin-top-8">-->
-                        <!--{{listData[2].title}}-->
+                        <!--{{listData[1].title}}-->
                     <!--</div>-->
                     <!--<div class="__list-infor scroll">-->
                         <!--<ul>-->
-                            <!--<li ng-repeat="x in listData[2].content">-->
+                            <!--<li ng-repeat="x in listData[0].content">-->
                                 <!--{{x}}-->
                             <!--</li>-->
                         <!--</ul>-->
@@ -28,32 +62,3 @@
         <!--<div class="clearfix"></div>-->
     <!--</div>-->
 <!--</div>-->
-
-<div class="container-fluid list-service-container-2 list-service-container-3">
-    <div class="row">
-        <div class="col-md-6 col-xs-12 pdl-0 pdr-0">
-            <div class="__image" style="background-image: url({{listData[2].img}})">
-                <!--<img src="{{listData[1].img}}" alt="">-->
-            </div>
-        </div>
-        <div class="col-md-5 mgl-40 mgl-xs-0 ">
-            <div class="__content">
-                <div class="__title upper-case pd-bottom-5 margin-top-8">
-                    {{listData[1].title}}
-                </div>
-                <div class="__list-infor scroll">
-                    <ul>
-                        <li ng-repeat="x in listData[0].content">
-                            {{x}}
-                        </li>
-                    </ul>
-                </div>
-
-                <a href="#"><div class="button-default bgc-gray-4 color-light hover-bgc-main1 upper-case float-right __see-more">
-                    see more
-                </div></a>
-            </div>
-        </div>
-        <div class="clearfix"></div>
-    </div>
-</div>

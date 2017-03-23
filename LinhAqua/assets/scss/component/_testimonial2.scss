@@ -38,7 +38,7 @@
     top: auto;
     transform: translateX(20px);
     &:before {
-      content: "b";
+      content: "d";
       color: $color-gray-4;
       font-size: 16px;
       font-family: "aqua icon" !important;
@@ -50,7 +50,7 @@
     right: 50%;
     top: auto;
     &:before {
-      content: "d";
+      content: "b";
       color: $color-gray-4;
       font-size: 16px;
       font-family: "aqua icon" !important;
@@ -125,11 +125,11 @@
         }
         &:after
         {
-          margin-left:3px;
+          //margin-left:3px;
         }
         &:before
         {
-          margin-left:3px;
+          //margin-left:3px;
         }
     }
     img
@@ -152,6 +152,28 @@
     }
 
 
+}
+.aqua-testimonial-container-3
+{
+  &:before
+  {
+    display: block;
+  }
+  .slick-prev,.slick-next
+  {
+    &:before
+    {
+      display: block;
+    }
+  }
+  .slick-prev:before
+  {
+    transform: translateX(-60px);
+  }
+  .slick-next:before
+  {
+    transform: translateX(40px) !important;
+  }
 }
 .aqua-testimonial-container-4 {
   .ro-content {
@@ -199,7 +221,7 @@
 
 @media (min-width:992px)
 {
-  .aqua-testimonial-container-3,.aqua-testimonial-container-4 {
+  .aqua-testimonial-container-4 {
     &:hover {
       .slick-prev {
         transform: translateX(80px);

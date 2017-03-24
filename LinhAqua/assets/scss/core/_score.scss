@@ -46,3 +46,9 @@ input,textarea
   border:1px solid $color-gray-4;
   border-radius: 0;
 }
+input,select,textarea
+{
+   padding-left: 20px!important;
+  padding-right: 20px !important;
+  color: $color-gray-4 !important;
+}

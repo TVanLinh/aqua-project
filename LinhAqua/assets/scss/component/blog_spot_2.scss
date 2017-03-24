@@ -137,4 +137,13 @@
 {
   font-weight: 400;
 }
-
+.__blog-page
+{
+  .__doted:after
+  {
+    display: inline-block;
+    font-size: 30px;
+    content: "\"";
+    line-height: 0;
+  }
+}

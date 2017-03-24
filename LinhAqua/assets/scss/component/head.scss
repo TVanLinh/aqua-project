@@ -1,14 +1,20 @@
 .aqua-head-container
 {
+
+  width:100%;
+  text-align: center;
   .__head-style1
   {
     //padding-bottom:40%;
+   // display: table;
     height:100vh;
     background-size:cover;
     background-position: center center;
     background-repeat:no-repeat;
     .content
     {
+      text-align: center;
+    //  display: table-cell;
       width:100%;
       height: 300px;
       padding-top:160px;
@@ -31,7 +37,7 @@
     {
       position: absolute;
       width: 100%;
-      bottom: 40px;
+      bottom: 15px;
     }
     .__button-follow a
     {
@@ -99,5 +105,138 @@
       }
     }
   }
+  @media (min-width: 1920px) {
+    //.content {
+    //  padding-top: 300px !important;
+    //}
+  }
+}
 
+.aqua-head-container-5
+{
+  height:100vh;
+  width:100%;
+  background-size:cover;
+  background-position: center center;
+  background-repeat:no-repeat;
+  display: table;
+  .table-middle
+  {
+    display: table-cell;
+    vertical-align: middle;
+    padding-top: 150px;
+    padding-bottom:100px;
+
+  }
+  .content img {
+       opacity: 0.7;
+       @include easing-animation();
+       &:hover {
+         opacity: 1;
+       }
+  }
+  .__text
+  {
+    font-size:60px;
+    color:$color-light;
+  }
+nav{
+  position: absolute;
+  top:0;
+  width:100%;
+}
+  .__button-follow
+  {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+  }
+  .__button-follow a
+  {
+    &:after
+    {
+      color: #FFFFFF;
+      transition: all 0.4s;
+      content: "a";
+      font-family: "aqua icon" !important;
+      font-size: 25px;
+      border-radius:50%;
+      border:1px solid #fff;
+      width:50px;
+      height:50px;
+      padding:5px;
+      @include easing-animation();
+    }
+    &:hover:after
+    {
+      color: $color-main1;
+      border-color: $color-main1;
+    }
+  }
+  @media (max-width: 1199px)
+  {
+    .table-middle .aqua-navbar-container .navbar-style6 .__navabar-main>ul>li:nth-child(6)>a>img
+    {
+      height:90px ;
+    }
+    img
+    {
+      width:80px;
+    }
+    .__text
+    {
+      font-size: 40px;
+    }
+  }
+  @media (max-width: 991px)
+  {
+      img
+      {
+        width:80px;
+      }
+    .table-middle
+    {
+      padding-top:250px;
+    }
+    .__text
+    {
+      font-size: 30px;
+    }
+  }
+  @media (max-width: 767px)
+  {
+    .table-middle
+    {
+      padding-top:150px;
+
+    }
+    .content
+    {
+      img
+      {
+        width:65px;
+      }
+    }
+    .__text
+    {
+      font-size: 20px;
+    }
+    .__button-follow
+    {
+      bottom: 20px;
+    }
+
+  }
+  @media (min-width: 768px)
+  {
+    .aqua-navbar-container .navbar-style5 .__navbar-logo
+    {
+      padding-top: 15px;
+      img
+      {
+        padding-top:0px !important;
+        width:30%;
+      }
+    }
+  }
 }
